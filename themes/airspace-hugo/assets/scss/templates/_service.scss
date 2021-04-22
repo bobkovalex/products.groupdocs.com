@@ -1,6 +1,6 @@
 .service {
   text-align: center;
-  padding: 90px 0;
+  padding: 50px 0;
 
   .service-item {
     padding-bottom: 80px;
@@ -20,7 +20,7 @@
     p {
       padding-top: 10px;
       margin: 0;
-      height: 100px;
+      height: 90px;
     }
   }
 }
@@ -60,10 +60,6 @@
   }
 }
 
-
-
-
-
 .service-arrow {
   .block {
     padding: 70px 30px;
@@ -78,13 +74,26 @@
   }
 }
 
-
-
-
 .service-list {
   .block {
     padding: 30px;
     margin-bottom: 20px;
     background: $light;
   }
+}
+
+.service-btn{
+  text-transform: none;
+  margin: 0px 5px;
+  width: 223px;
+}
+
+.service-btn-label{
+  font-size: 11px;
+}
+
+.service-btn-platform{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
 }

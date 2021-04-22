@@ -1,7 +1,7 @@
 ################################# Basic configuration #########################
 # Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-baseURL = "http://examplesite.org"
-title = "Airspace | Creative Agency Hugo Template"
+baseURL = "https://products.groupdocs.com"
+title = ".NET & Java Document Automation APIs | GroupDocs"
 theme = "airspace-hugo"
 # Number of posts per page in list view
 paginate = "4"
@@ -37,12 +37,12 @@ ordered = false
 
 ################################# Default parameters ##########################
 [params]
-logo = "images/logo.png"
-logo_width = "150px"
+logo = "https://cms.admin.containerize.com/templates/groupdocs/img/svg/groupdocs-logo.svg"
+logo_width = "270px"
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
-author = "Themefisher"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+description = "Document automation APIs for .NET & Java developers to view annotate merge/diff convert e-sign or assemble documents"
+author = "GroupDocs"
+image = "https://cms.admin.containerize.com/templates/groupdocs/img/svg/groupdocs-logo.svg" # this image will be used as fallback if a page has no image of its own
 
 
 ################################# Sidebar widgets #############################

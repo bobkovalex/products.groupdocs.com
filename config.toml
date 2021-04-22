@@ -1,6 +1,6 @@
 ################################# Basic configuration #########################
 # Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-baseURL = "https://bobkovalex.github.io/products.groupdocs.com"
+baseURL = "https://groupdocs.netlify.app"
 title = ".NET & Java Document Automation APIs | GroupDocs"
 theme = "airspace-hugo"
 # Number of posts per page in list view

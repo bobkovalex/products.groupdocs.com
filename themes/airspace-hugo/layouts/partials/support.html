@@ -1,0 +1,52 @@
+{{ with .Params.support}}
+{{ if .enable }}
+<a id="support" class="anchor" name="support"></a>
+<section class="support">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Support and Learning Resources</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h3>Learning Resources</h3>
+                    <p>
+                        <ul>
+                            {{ range .learning_resource}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h3>Product Support</h3>
+                    <p>
+                        <ul>
+                            {{ range .product_support}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row support-btns">
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_l | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_l }}"></i> {{ .label_l }}</a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_r | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_r }}"></i> {{ .label_r }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

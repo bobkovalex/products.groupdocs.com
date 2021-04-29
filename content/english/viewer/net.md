@@ -3,7 +3,7 @@ title: ".NET Document Automation APIs"
 description: "APIs to View, Export, Annotate, Compare, Sign, Automate and Search Documents in your .NET Applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
-layout: "product-family"
+layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 button:
@@ -15,6 +15,7 @@ button:
 ############################# SubMenu ############################
 submenu:
     enable: true
+    
     left:
         img_alt: "GroupDocs.Total for .NET"
         image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
@@ -24,20 +25,24 @@ submenu:
     middle:
         button:
             # button loop
-            - link: "/total/#overview"
+            - link: "/total/net#overview"
               text: "Overview"
 
             # button loop
-            - link: "/total/#products"
+            - link: "/total/net#products"
               text: "Products"
 
             # button loop
-            - link: "/total/#features"
+            - link: "/total/net#features"
               text: "Features"
 
             # button loop
-            - link: "/total/#support"
+            - link: "/total/net#support"
               text: "Support"
+
+            # button loop
+            # - link: "/total/net#solutions"
+            #   text: "Solutions"
 
             # button loop
             - link: "https://purchase.groupdocs.com/pricing/total/net"
@@ -162,99 +167,127 @@ products:
 ############################# Features ############################
 features:
     enable: true
-    title: "Features"
-    description: ""
 
     feature:
-        # feature loop
-        - icon: "fas fa-eye"
-          content: "View any format document in its original format or in HTML, Images or PDF format"
+      # feature loop
+      - icon: "fas fa-eye"
+        content: "View any format document in its original format or in HTML, Images or PDF format"
 
-        # feature loop
-        - icon: "fas fa-file"
-          content: "Annotate any PDF, DOCX, XLSX and PPTX documents"
+      # feature loop
+      - icon: "fas fa-file"
+        content: "Annotate any PDF, DOCX, XLSX and PPTX documents"
 
-        # feature loop
-        - icon: "fas fa-save"
-          content: "Save annotations in different objects like JSON files, Databases or merge with original file"
-        
-        # feature loop
-        - icon: "fas fa-file-export"
-          content: "Export annotations to separate PDF or Word file"
+      # feature loop
+      - icon: "fas fa-save"
+        content: "Save annotations in different objects like JSON files, Databases or merge with original file"
+      
+      # feature loop
+      - icon: "fas fa-file-export"
+        content: "Export annotations to separate PDF or Word file"
 
-        # feature loop
-        - icon: "fas fa-bolt"
-          content: "Fastest on-the-fly conversion API"
+      # feature loop
+      - icon: "fas fa-bolt"
+        content: "Fastest on-the-fly conversion API"
 
-        # feature loop
-        - icon: "fas fa-clone"
-          content: "Batch conversion of multiple files"
+      # feature loop
+      - icon: "fas fa-clone"
+        content: "Batch conversion of multiple files"
 
-        # feature loop
-        - icon: "fas fa-file-code"
-          content: "Compares content for differences in words and paragraphs"
+      # feature loop
+      - icon: "fas fa-file-code"
+        content: "Compares content for differences in words and paragraphs"
 
-        # feature loop
-        - icon: "fas fa-file-contract"
-          content: "Separate differences summary while using comparison API"
+      # feature loop
+      - icon: "fas fa-file-contract"
+        content: "Separate differences summary while using comparison API"
 
-        # feature loop
-        - icon: "fas fa-signature"
-          content: "Multiple signature properties"
+      # feature loop
+      - icon: "fas fa-signature"
+        content: "Multiple signature properties"
 
-        # feature loop
-        - icon: "fas fa-file-signature"
-          content: "Setup signature on arbitrary pages like first, last, even, odd etc"
+      # feature loop
+      - icon: "fas fa-file-signature"
+        content: "Setup signature on arbitrary pages like first, last, even, odd etc"
 
-        # feature loop
-        - icon: "fas fa-server"
-          content: "Generate Multi format documents from more than one data sources"
+      # feature loop
+      - icon: "fas fa-server"
+        content: "Generate Multi format documents from more than one data sources"
 
-        # feature loop
-        - icon: "fas fa-key"
-          content: "Built-in and custom metadata operations in the form key/value pairs"
+      # feature loop
+      - icon: "fas fa-key"
+        content: "Built-in and custom metadata operations in the form key/value pairs"
 
-        # feature loop
-        - icon: "fas fa-file-download"
-          content: "Export metadata attached with supported file formats"
+      # feature loop
+      - icon: "fas fa-file-download"
+        content: "Export metadata attached with supported file formats"
 
-        # feature loop
-        - icon: "fab fa-searchengin"
-          content: "Multiple basic and advance searching methods"
+      # feature loop
+      - icon: "fab fa-searchengin"
+        content: "Multiple basic and advance searching methods"
 
-        # feature loop
-        - icon: "fas fa-search"
-          content: "Fuzzy and Synonym Search"
+      # feature loop
+      - icon: "fas fa-search"
+        content: "Fuzzy and Synonym Search"
 
-        # feature loop
-        - icon: "fas fa-search-minus"
-          content: "Search and remove Text/Image watermark"
+      # feature loop
+      - icon: "fas fa-search-minus"
+        content: "Search and remove Text/Image watermark"
 
-        # feature loop
-        - icon: "fas fa-file-image"
-          content: "Adding watermark to images inside a document"
+      # feature loop
+      - icon: "fas fa-file-image"
+        content: "Adding watermark to images inside a document"
 
-        # feature loop
-        - icon: "fas fa-file-alt"
-          content: "Extract structured and highlighted text"
-        
-        # feature loop
-        - icon: "fas fa-file-archive"
-          content: "Fetches text from containers containing other files such as zip archives"
+      # feature loop
+      - icon: "fas fa-file-alt"
+        content: "Extract structured and highlighted text"
+      
+      # feature loop
+      - icon: "fas fa-file-archive"
+        content: "Fetches text from containers containing other files such as zip archives"
 
-        # feature loop
-        - icon: "fas fa-file-invoice"
-          content: "Direct and inverse document transformation"
+      # feature loop
+      - icon: "fas fa-file-invoice"
+        content: "Direct and inverse document transformation"
 
-        # feature loop
-        - icon: "fas fa-edit"
-          content: "Edit multiple document formats"
+      # feature loop
+      - icon: "fas fa-edit"
+        content: "Edit multiple document formats"
+
+    more_feature:
+      # more_feature_loop
+      - title: "View Documents Efficiently & Reliably"
+        content: "Using GroupDocs.Viewer API you can display more than 90 document formats efficiently and reliably ‎with content and document structure integrity intact. Following sample code shows that how easy it is ‎to view HTML representation of a DOCX document:‎"
+        snippet_link: "https://gist.github.com/bobkovalex/f5c79052644211472aa1660a3414f69c"
+
+      - title: "Apply Transformation to Rendered Output"
+        content: "You can perform various transformations to the rendered output document using GroupDocs.Viewer ‎for .NET API. These transformation options give you control on the way you present the rendered ‎output for display. The available transformations are, page rotation option, page reorder option and ‎applying text watermark.‎"
+
+      # more_feature_loop
+      - title: "Working with Outlook Data Files"
+        content: "GroupDocs.Viewer for .NET API can render the items in Outlook Data Files (OST/PST) as PDF, HTML and Image Files. Our ‎Viewer API also has the ability to obtain the list of folders contained in Outlook Data Files. Using ‎GroupDocs.Viewer for .NET API, you can specify the folder to render from Outlook Data Files. Likewise, ‎‎you can also obtain email messages contained in OST/PST formats as attachments. GroupDocs.Viewer for .NET also enables you to filter messages from OST/PST formats based on subject, content or sender."
+
+      # more_feature_loop
+      - title: "Working with CAD Documents"
+        content: "GroupDocs.Viewer for .NET API can render model and all non-empty layouts or render a specific layout of a CAD file. GroupDocs.Viewer for .NET API also supports tiled rendering or rendering by coordinates of CAD documents into image, HTML or PDF. You can also obtain layer statuses for CAD documents."
+
+############################# Testemonials ###############################
+testimonials:
+  enable: true
+
+  testimonial:
+    # testimonial item loop
+    - name: "Mats Oustad"
+      designation: "Senior Consultant/Partner at Novanet AS"
+      content: "After implementing and using GroupDocs.Viewer for .NET in the project it looks to be working very well. I have tested with a lot of documents and so far so good. Everything I've thrown at it renders nicely and looks just as good as it would in a PDF viewer or MS Word."
+              
+    # testimonial item loop
+    - name: "Martin Lasarga"
+      designation: "Product Manager at Axentria ECM by G.S.I."
+      content: "Excellent service and excellent products. They were extremely helpful and responsive during the GroupDocs.Viewer for .NET implementation process, can't recommend them highly enough."
 
 ############################# Support ############################
 support:
     enable: true
-    title: "Support and Learning Resources"
-    description: ""
 
     learning_resource:
         # learning_resource loop
@@ -294,4 +327,108 @@ support:
     icon_r: "ion-social-octocat"
     label_r: "Download Examples"
     link_r: "http://groupdocs.github.io/"
+
+############################# Solutions ############################
+solutions:
+    enable: true
+    title: "GroupDocs.Total for .NET offers individual solutions for"
+
+    solution:
+        # solution loop
+        - img_alt: "GroupDocs.Viewer for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-net.png"
+          product: "GroupDocs.Viewer"
+          platform: ".NET"
+          link: "/viewer/net"
+        
+        # solution loop
+        - img_alt: "GroupDocs.Annotation for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
+          product: "GroupDocs.Annotation"
+          platform: ".NET"
+          link: "/annotation/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Conversion for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
+          product: "GroupDocs.Conversion"
+          platform: ".NET"
+          link: "/conversion/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Comparison for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
+          product: "GroupDocs.Comparison"
+          platform: ".NET"
+          link: "/comparison/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Signature for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
+          product: "GroupDocs.Signature"
+          platform: ".NET"
+          link: "/signature/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Assembly for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
+          product: "GroupDocs.Assembly"
+          platform: ".NET"
+          link: "/assembly/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Metadata for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
+          product: "GroupDocs.Metadata"
+          platform: ".NET"
+          link: "/metadata/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Search for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
+          product: "GroupDocs.Search"
+          platform: ".NET"
+          link: "/search/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Parser for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
+          product: "GroupDocs.Parser"
+          platform: ".NET"
+          link: "/parser/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Watermark for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
+          product: "GroupDocs.Watermark"
+          platform: ".NET"
+          link: "/watermark/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Editor for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
+          product: "GroupDocs.Editor"
+          platform: ".NET"
+          link: "/editor/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Merger for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
+          product: "GroupDocs.Merger"
+          platform: ".NET"
+          link: "/merger/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Redaction for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-net.png"
+          product: "GroupDocs.Redaction"
+          platform: ".NET"
+          link: "/redaction/net"
+
+        # solution loop
+        - img_alt: "GroupDocs.Classification for .NET"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
+          product: "GroupDocs.Classification"
+          platform: ".NET"
+          link: "/classification/net"
 ---

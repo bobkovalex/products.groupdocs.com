@@ -1,0 +1,32 @@
+{{ with .Params.testimonials }}
+{{ if .enable }}
+<a id="testimonials" class="anchor" name="testimonials"></a>
+<section class="testimonial section-sm">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>What People Are Saying</h2>
+                <p>Don't just take our word for it. See what other developers say about our APIs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-carousel text-center">
+                    <div class="testimonial-slider owl-carousel">
+                        {{ range .testimonial }}
+                        <div>
+                            <i class="ion-quote"></i>
+                            <p>{{ .content | markdownify }}</p>
+                            <div class="user">
+                                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+{{ end }}
+{{ end }}

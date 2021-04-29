@@ -1,10 +1,15 @@
-<section class="page-title bg-2" style="background-image: url('{{.Params.Bg_image | relURL}}');">
+<section class="page-title bg-2 {{if .Params.bg_overlay}}overly{{end}}" style="background-image: url('{{.Params.Bg_image | relURL}}');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
           <h1>{{ .Title }}</h1>
-          <p>{{ .Params.Description }}</p>
+          <p>{{ .Params.description }}</p>
+          {{ with .Params.button}}
+            {{ if .enable }}
+              <a href="{{ .link }}" class="btn btn-main btn-icon animated fadeInUp"><i class="{{ .icon }}"></i> {{ .label }}</a>
+            {{end}}
+          {{end}}
         </div>
       </div>
     </div>

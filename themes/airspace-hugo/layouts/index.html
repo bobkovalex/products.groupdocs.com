@@ -25,8 +25,8 @@
 <!-- /banner -->
 
 <!-- service -->
-{{ if .Params.service.enable }}
 {{ with .Params.service }}
+{{ if .enable }}
 <section class="service">
   <div class="container">
     <div class="row">
@@ -39,32 +39,29 @@
       {{ range .service_item }}
       <div class="col-sm-12 col-md-6">
         <div class="service-item">
-          <!--<i class="icon {{ .icon }}"></i>-->
           <img src="{{ .image | relURL }}" />
           <h4><a href="{{ .link | relLangURL }}">{{ .name | markdownify }}</a></h4>
           <p>{{ .content | markdownify }}</p>
           {{ with .button_net }}
             {{ if .enable }}
               <a href="{{ .link | relLangURL }}">
-                <div class="btn btn-small service-btn animated fadeInUp">
+                <div class="btn btn-solid-border service-btn animated fadeInUp">
                   <span class="service-btn-label">{{ .label | markdownify }} for</span>
                   <br>
                   <span class="service-btn-platform">.NET</span>
                 </div>
               </a>
-              <!-- <a href="{{ .link | relLangURL }}" class="btn btn-sm btn-primary animated fadeInUp">GroupDocs.Total for .NET</a> -->
             {{ end }}
           {{ end }}
           {{ with .button_java }}
             {{ if .enable }}
               <a href="{{ .link | relLangURL }}">
-                <div class="btn btn-small service-btn animated fadeInUp">
+                <div class="btn btn-solid-border service-btn animated fadeInUp">
                   <span class="service-btn-label">{{ .label | markdownify }} for</span>
                   <br>
                   <span class="service-btn-platform">Java</span>
                 </div>
               </a>
-              <!-- <a href="{{ .link | relLangURL }}" class="btn btn-small btn-java animated fadeInUp">GroupDocs.Total for Java</a> -->
             {{ end }}
           {{ end }}
         </div>

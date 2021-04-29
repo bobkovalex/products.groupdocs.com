@@ -14,9 +14,9 @@ banner:
 
 ############################# Service ############################
 service:
-  enable : true
-  title : "Our Products"
-  description : "Document automation has always been an complex process until now, <br> with GroupDocs APIs automate your documents in any way imaginable"
+  enable: true
+  title: "Our Products"
+  description: "Document automation has always been an complex process until now, <br> with GroupDocs APIs automate your documents in any way imaginable"
   service_item:
     # service item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-total-net.png?v2"

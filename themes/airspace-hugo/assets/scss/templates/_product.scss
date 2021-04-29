@@ -1,0 +1,115 @@
+// SubMenu
+.submenu > .container{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.submenu img{
+    width: 42px;
+    height: 42px;
+    float: left;
+    margin-right: 8px;
+}
+
+.submenu h4{
+    margin: 0;
+}
+
+.nav a{
+    color: $black;
+}
+
+.btn-download{
+    background-color: $btn-success;
+
+    &:hover {
+        background: darken($btn-success, 20%);
+        color: $light;
+    }
+}
+
+.btn-learn{
+    background-color: $btn-secondary;
+
+    &:hover {
+        background: darken($btn-secondary, 20%);
+        color: $light;
+    }
+}
+
+.btn-buy{
+    background-color: $btn-primary;
+
+    &:hover {
+        background: darken($btn-primary, 20%);
+        color: $light;
+    }
+}
+
+// Overview
+.overview{
+    background-color: #f5f5f5;
+}
+
+.overview > .container{
+    padding: 20px 30px;
+}
+
+// Products
+.products > .container{
+    padding: 20px 30px;
+}
+
+.products img{
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 90px;
+}
+
+// Features
+.features{
+    background-color: #f5f5f5;
+}
+
+.features > .container{
+    padding: 20px 30px;
+}
+
+.features i{
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 60px;
+    color: $primary-color;
+}
+
+// Support
+.support{
+    background-color: $primary-color;
+    color: $light;
+}
+
+.support a{
+    color: $light;
+}
+
+.support > .container{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.product-item ul{
+    margin-top: 25px;
+}
+
+.product-item li{
+    margin: 8px 0;
+}
+
+.support-btns{
+    margin: 25px 0;
+}
+
+.btn-support {
+    @extend .btn-main;
+    border-color: $light;
+}

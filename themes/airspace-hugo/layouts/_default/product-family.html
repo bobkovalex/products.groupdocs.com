@@ -1,0 +1,166 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- ############ SUB MENU ############ -->
+{{ with .Params.submenu }}
+{{ if .enable }}
+<section class="submenu">
+    <div class="container">
+        <div class="row">
+            {{ with .left }}
+            <div class="col-sm-3 col-md-3">
+                <h4>
+                    <span class="spanclass">
+                        <img alt="{{ .img_alt | markdownify }}" data-src="{{ .image | relURL }}" src="{{ .image | relURL }}">
+                    </span>
+                    {{ .product | markdownify }}
+                    <div><small>for {{ .platform | markdownify }}</small></div>
+                </h4>
+            </div>
+            {{ end }}
+            {{ with .middle }}
+            <div class="col-sm-5 col-md-5">
+                <ul class="nav nav-pills mb-hide">
+                    {{ range .button }}
+                    <li><a href="{{ .link | relURL }}">{{ .text | markdownify }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+            {{ with .right }}
+            <div class="col-sm-4 col-md-4">
+                <a href="{{ .link_download | relLangURL }}" class="btn btn-small btn-download animated fadeInUp"><i class="ion-android-arrow-down"></i> Download</a>
+                <a href="{{ .link_learn | relLangURL }}" class="btn btn-small btn-learn animated fadeInUp"><i class="ion-document-text"></i> Learn</a>
+                <a href="{{ .link_buy | relLangURL }}" class="btn btn-small btn-buy animated fadeInUp"><i class="ion-pricetag"></i> Buy</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- ############ OVERVIEW ############ -->
+{{ with .Params.overview}}
+{{ if .enable }}
+<section class="overview">
+    <div class="container">
+        <a id="overview" class="anchor" name="overview"></a>
+        <div class="row">
+            <p class="mt-30">{{ .content | markdownify }}</p>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ with .Params.products}}
+{{ if .enable }}
+<section class="products">
+    <div class="container">
+        <a id="products" class="anchor" name="products"></a>
+        <div class="row">
+            <div class="section-title">
+                {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+                {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+            </div>
+        </div>
+        <div class="row">
+            {{ range .product }}
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <a href="{{ .link | relURL }}">
+                        <img alt="{{ .img_alt | markdownify }}" data-src="{{ .image | relURL }}" src="{{ .image | relURL }}">
+                        <h4>{{ .name | markdownify }}</h4>
+                    </a>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- ############ FEATURES ############ -->
+{{ with .Params.features}}
+{{ if .enable }}
+<section class="features">
+    <div class="container">
+        <a id="features" class="anchor" name="features"></a>
+        <div class="row">
+            <div class="section-title">
+                {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+                {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+            </div>
+        </div>
+        <div class="row">
+            {{ range .feature }}
+            <div class="col-sm-4 col-md-4">
+                <div class="feature-item">
+                    <i class="{{ .icon }} fa-2x"></i>
+                    <p>{{ .content | markdownify }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- ############ SUPPORT ############ -->
+{{ with .Params.support}}
+{{ if .enable }}
+<section class="support">
+    <div class="container">
+        <a id="support" class="anchor" name="support"></a>
+        <div class="row">
+            <div class="section-title">
+                {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+                {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h4>Learning Resources</h4>
+                    <p>
+                        <ul>
+                            {{ range .learning_resource}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h4>Product Support</h4>
+                    <p>
+                        <ul>
+                            {{ range .product_support}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row support-btns">
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_l | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_l }}"></i> {{ .label_l }}</a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_r | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_r }}"></i> {{ .label_r }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

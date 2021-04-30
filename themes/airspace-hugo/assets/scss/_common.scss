@@ -458,16 +458,22 @@ input[type="tel"] {
 .tabCommon {
   .nav-tabs {
     border-bottom: 0;
-    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    margin: 10px auto;
+    width: 502px;
 
     li {
       margin-right: 5px;
+      float: none;
+      color: #fff;
+      padding: 10px 30px;
+      cursor: pointer;
     }
 
-    li.active a {
-      background-color: $primary-color;
-      border: 1px solid $primary-color;
-      color: #ffffff;
+    li.active {
+      border-bottom: 2px solid $primary-color;
+      color: $primary-color;
     }
 
     a {
@@ -480,11 +486,24 @@ input[type="tel"] {
         color: $light;
       }
     }
+
+    h3 {
+      margin: 0;
+      font-weight: bold;
+    }
   }
 
   .tab-content {
     padding: 20px;
-    border: 1px solid $border-color;
+    text-align: center;
+
+    h3{
+      color: #fff;
+    }
+
+    li {
+      color: #7b7b7b;
+    }
   }
 }
 

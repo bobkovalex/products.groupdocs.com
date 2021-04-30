@@ -51,9 +51,70 @@
         </div>
     </div>
 </section>
+{{ with .tabs }}
+{{ if .enable }}
+<section class="overview-tabs bg-dark">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tabCommon carousel slide" id="tabsCarousel">
+                    <!-- Tabs -->
+                    <ol class="nav nav-tabs">
+                        <li data-target="#tabsCarousel" data-slide-to="0" class="">
+                            At a
+                            <h3>Glance</h3>
+                        </li>
+                        <li data-target="#tabsCarousel" data-slide-to="1" class="active">
+                            Supported
+                            <h3>File Formats</h3>
+                        </li>
+                        <li data-target="#tabsCarousel" data-slide-to="2" class="">
+                            Platform
+                            <h3>Independence</h3>
+                        </li>
+                    </ol>
+                    <!-- Slides -->
+                    <div class="tab-content carousel-inner">
+                        <div class="tab-pane tab-glance item">
+                            <p>{{ .title_glance | markdownify }}</p>
+                            <h3>Overview</h3>
+                            <ul>
+                                <li>Display 170+ Document Types</li>
+                                <li>Get HTML, Image, PDF Version</li>
+                                <li>Rotate & Reorder Pages</li>
+                                <li>Apply Watermarks</li>
+                                <li>Cache for Fast Process</li>
+                                <li>Add Custom Fonts</li>
+                                <li>Apply Encoding Standards</li>
+                                <li>Custom Input Data Handler</li>
+                                <li>Render with Track Changes</li>
+                                <li>Render as Responsive HTML</li>
+                                <li>Render PDF & CAD Layers</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane tab-formats item active">
+                            <p>{{ .title_formats | markdownify }}</p>
+                        </div>
+                        <div class="tab-pane tab-platform item">
+                            <p>{{ .title_platform | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
 {{ end }}
 {{ end }}
 
+{{ end }}
+{{ end }}
+
+<!-- ############ OVERVIEW_TABS ############ -->
+
+
+<!-- ############ PRODUCTS ############ -->
 {{ with .Params.products}}
 {{ if .enable }}
 <section class="products">
@@ -110,7 +171,9 @@
                 <div class="more-feature-item">
                     <h3>{{ .title | markdownify }}</h4>
                     <p>{{ .content | markdownify }}</p>
-                    <script src="{{ .snippet_link | relURL }}.js"></script>
+                    {{ if .gist_link }}
+                    <script src="{{ .gist_link | relURL }}.js"></script>
+                    {{ end }}
                 </div>
             </div>
             {{ end }}

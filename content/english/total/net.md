@@ -255,7 +255,7 @@ support:
 
     learning_resource:
         # learning_resource loop
-        - link: "https://docs.groupdocs.com/display/gdtotalnet/Home"
+        - link: "https://docs.groupdocs.com/total/net/"
           label: "Documentation"
 
         # learning_resource loop

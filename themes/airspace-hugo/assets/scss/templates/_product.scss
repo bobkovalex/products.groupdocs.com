@@ -74,6 +74,16 @@
     }
 }
 
+.overview-tabs {
+    .container {
+        padding: 20px 30px;
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
 // Products
 .products {
     .container {
@@ -164,6 +174,10 @@
             color: #fff;
             font-weight: bold;
         }
+    }
+
+    h2{
+        text-transform: none;
     }
 }
 

@@ -5,21 +5,20 @@
     z-index: 999999999999;
     background-color: $primary-color;
     border-radius: 50px;
-    border: 1px solid #fff;
+    border: 1px solid $white;
     text-align: center;
     padding: 10px;
     font-size: 18px;
     width: 48px;
-    color: #fff;
+    color: $white;
+}
+
+.section-default-padding {
+    padding: 20px 30px;
 }
 
 // SubMenu
 .submenu { 
-    .container {
-        padding-top: 20px;
-        padding-bottom: 15px;
-    }
-
     img {
         width: 42px;
         height: 42px;
@@ -30,11 +29,11 @@
     h4 {
         margin: 0;
     }
-}
 
-.nav {
-    a {
-        color: $black;
+    .nav {
+        a {
+            color: $black;
+        }
     }
 }
 
@@ -43,7 +42,7 @@
 
     &:hover {
         background: darken($btn-success, 20%);
-        color: $light;
+        color: $white;
     }
 }
 
@@ -52,7 +51,7 @@
 
     &:hover {
         background: darken($btn-secondary, 20%);
-        color: $light;
+        color: $white;
     }
 }
 
@@ -61,106 +60,70 @@
 
     &:hover {
         background: darken($btn-primary, 20%);
-        color: $light;
+        color: $white;
     }
 }
 
 // Overview
-.overview {
-    background-color: #f5f5f5;
-
-    .container {
-        padding: 20px 30px;
-    }
-}
-
-.tabCommon {
-    .nav-tabs {
-      border-bottom: 0;
-      text-align: center;
-      display: flex;
-      margin: 10px auto;
-      width: 502px;
-  
-      li {
-        margin-right: 5px;
-        float: none;
-        color: #fff;
-        padding: 10px 30px;
-        cursor: pointer;
-      }
-  
-      li.active {
-        border-bottom: 2px solid $primary-color;
-        color: $primary-color;
-        p {
-          color: $primary-color;
-        }
-      }
-  
-      a {
-        border-radius: 0;
-        background: #f9f9f9;
-  
-        &:hover {
-          border: 1px solid transparent;
-          background: $primary-color;
-          color: $light;
-        }
-      }
-  
-      h3 {
-        margin: 0;
-        font-weight: bold;
-      }
-    }
-  
-    .tab-content {
-      padding: 20px;
-  
-      h3{
-        color: #fff;
-      }
-  
-      li {
-        color: #cccccc;
-      }
-    }
-  }
-
 .overview-tabs {
-    .container {
-        padding: 20px 30px;
-        color: #fff;
+    .tabCommon {
+        text-align: center;
 
-        p {
-            color: $light-grey;
-            text-align: center;
+        .nav-tabs {
+          display: -webkit-inline-flex;
+          margin: 25px 0;
+          border: 0;
+      
+          li {
+            margin: 5px;
+            float: none;
+            color: $light-gray;
+            padding: 10px 30px;
+            cursor: pointer;
+          }
+      
+          li.active {
+            border-bottom: 2px solid $primary-color;
+            color: $primary-color;
+            p {
+              color: $primary-color;
+            }
+          }
         }
-    
-        table {
-            margin: 40px 20px;
-        
-            th, td {
-                padding: 5px 10px;
-            }
+      
+        .tab-content {
+          padding: 20px;
+          text-align: left;
 
-            th {
-                padding-bottom: 20px;
+            p {
+                color: $light-gray;
+                text-align: center;
             }
         
-            td {
-                color: $grey;
-                width: 50%;
-
-                strong {
-                    color: $light-grey;
+            table {
+                margin: 40px 20px;
+            
+                th, td {
+                    padding: 5px 10px;
                 }
-            }
 
-            code {
-                color: $primary-color;
-                padding: 10px 15px;
+                th {
+                    padding-bottom: 20px;
+                }
+            
+                td {
+                    color: $gray;
+                    width: 50%;
+
+                    strong {
+                        color: $light-gray;
+                    }
+                }
+
+                code {
+                    color: $primary-color;
+                    padding: 10px 15px;
+                }
             }
         }
     }
@@ -168,10 +131,6 @@
 
 // Products
 .products {
-    .container {
-        padding: 20px 30px;
-    }
-
     img {
         float: left;
         margin-right: 10px;
@@ -181,13 +140,7 @@
 
 // Features
 .features {
-    background-color: #f5f5f5;
-
-    .container {
-        padding: 20px 30px;
-    }
-
-    i{
+    i {
         float: left;
         margin-right: 10px;
         padding-bottom: 60px;
@@ -197,15 +150,11 @@
 
 // Support
 .support{
-    background-color: $primary-color;
-    color: $light;
-
-    a{
-        color: $light;
+    a {
+        color: $white;
     }
 
-    .container{
-        padding: 20px 30px;
+    .container {
         text-align: center;
     }
 
@@ -225,24 +174,17 @@
     
     .btn-support {
         @extend .btn-main;
-        border-color: $light;
+        border-color: $white;
     }
 }
 
 // Solutions
 .solutions {
-    background-color: #7f8c8d;
-    color: $light;
-
-    .container {
-        padding: 20px 0;
-    }
-
     .solution-container {
         margin: 15px 0;
     
         a {
-            color: #fff;
+            color: $white;
         }
     
         img {
@@ -253,12 +195,12 @@
         }
     
         small {
-            color: #fff;
+            color: $white;
             font-weight: bold;
         }
     }
 
-    h2{
+    h2 {
         text-transform: none;
     }
 }

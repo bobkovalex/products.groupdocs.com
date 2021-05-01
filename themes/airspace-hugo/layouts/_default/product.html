@@ -7,7 +7,7 @@
 {{ if .enable }}
 <a id="submenu" class="anchor" name="submenu"></a>
 <section class="submenu">
-    <div class="container">
+    <div class="container section-default-padding">
         <div class="row">
             {{ with .left }}
             <div class="col-sm-3 col-md-3">
@@ -44,8 +44,8 @@
 {{ with .Params.overview}}
 {{ if .enable }}
 <a id="overview" class="anchor" name="overview"></a>
-<section class="overview">
-    <div class="container">
+<section class="overview bg-gray">
+    <div class="container section-default-padding">
         <div class="row">
             <p class="mt-30">{{ .content | markdownify }}</p>
         </div>
@@ -54,12 +54,12 @@
 {{ with .tabs }}
 {{ if .enable }}
 <section class="overview-tabs bg-dark">
-    <div class="container">
+    <div class="container section-default-padding">
         <div class="row">
             <div class="col-md-12">
                 <div class="tabCommon carousel slide" id="tabsCarousel">
                     <!-- Tabs -->
-                    <ol class="nav nav-tabs">
+                    <ol class="nav nav-tabs text-center">
                         {{ range $index, $elements := .tab }}
                         <li data-target="#tabsCarousel" data-slide-to="{{ $index }}" {{ if eq $index 1 }} class="active" {{ end }}>
                             {{ .name | markdownify }}
@@ -86,15 +86,12 @@
 {{ end }}
 {{ end }}
 
-<!-- ############ OVERVIEW_TABS ############ -->
-
-
 <!-- ############ PRODUCTS ############ -->
 {{ with .Params.products}}
 {{ if .enable }}
-<section class="products">
+<section class="products bg-gray">
     <a id="products" class="anchor" name="products"></a>
-    <div class="container">
+    <div class="container section-default-padding">
         <div class="row">
             <div class="section-title">
                 {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
@@ -124,7 +121,7 @@
 {{ if .enable }}
 <a id="features" class="anchor" name="features"></a>
 <section class="features">
-    <div class="container">
+    <div class="container section-default-padding">
         <div class="row">
             <div class="section-title">
                 <h2>Features</h2>
@@ -168,8 +165,8 @@
 {{ with .Params.solutions}}
 {{ if .enable }}
 <a id="solutions" class="anchor" name="solutions"></a>
-<section class="solutions">
-    <div class="container">
+<section class="solutions bg-primary">
+    <div class="container section-default-padding">
         <div class="row">
             <div class="section-title">
                 {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}

@@ -455,58 +455,6 @@ input[type="tel"] {
   }
 }
 
-.tabCommon {
-  .nav-tabs {
-    border-bottom: 0;
-    text-align: center;
-    display: flex;
-    margin: 10px auto;
-    width: 502px;
-
-    li {
-      margin-right: 5px;
-      float: none;
-      color: #fff;
-      padding: 10px 30px;
-      cursor: pointer;
-    }
-
-    li.active {
-      border-bottom: 2px solid $primary-color;
-      color: $primary-color;
-    }
-
-    a {
-      border-radius: 0;
-      background: #f9f9f9;
-
-      &:hover {
-        border: 1px solid transparent;
-        background: $primary-color;
-        color: $light;
-      }
-    }
-
-    h3 {
-      margin: 0;
-      font-weight: bold;
-    }
-  }
-
-  .tab-content {
-    padding: 20px;
-
-    h3{
-      color: #fff;
-    }
-
-    li {
-      color: #cccccc;
-    }
-  }
-}
-
-
 .commonAccordion {
   .panel {
     border-radius: 0;

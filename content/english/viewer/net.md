@@ -86,13 +86,14 @@ overview:
             | `Microsoft Office`                                                                      | `Other Formats`                                                    |
             | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
             | **Word**: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT‎                                    | **PDF Formats**: PDF, TEX, XPS, OXPS                                 |
-            | **Excel**: XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC, SpreadsheetML       | **OpenDocument**: ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG |
-            | **PowerPoint**: PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM                       | **Delimiter-Separated Values**: CSV, TSV                             |
-            | **Visio**: VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM,             | **Web**: HTML, MHT, MHTML                                            |
-            | VSDM                                                              | **Metafile**‎: WMF, EMF, CGM‎, WMZ, EMZ                                |
-            | **Project**: MPP, MPT, MPX                                                   | **PostScript**: PS, EPS                                              |
-            | **Outlook**: MSG, EML, EMLX, PST, OST‎                                                                        | **Archives**: ZIP, TAR, BZ2, GZ, RAR, RAR5                           |
-            | **OneNote**: ONE                                                             | **Various**: OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF     |
+            | **Excel**: XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC,        | **OpenDocument**: ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG |
+            | SpreadsheetML                       | **Delimiter-Separated Values**: CSV, TSV                             |
+            | **PowerPoint**: PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM | **Web**: HTML, MHT, MHTML                                            |
+            | **Visio**: VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, | **Metafile**‎: WMF, EMF, CGM‎, WMZ, EMZ                                |
+            | VSDM                                              | **PostScript**: PS, EPS                                              |
+            | ‎**Project**: MPP, MPT, MPX                                          | **Archives**: ZIP, TAR, BZ2, GZ, RAR, RAR5                           |
+            | **Outlook**: MSG, EML, EMLX, PST, OST                                          | **Various**: OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF     |
+            | **OneNote**: ONE | |
 
             | `Images, Graphics & Diagrams`  | `Programming Languages Formats` |
             | --- | --- |

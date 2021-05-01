@@ -93,7 +93,6 @@
       
         .tab-content {
           padding: 20px;
-          text-align: left;
 
             p {
                 color: $light-gray;
@@ -101,29 +100,38 @@
             }
         
             table {
-                margin: 40px 20px;
+                margin: 50px auto;
+                table-layout: fixed;
             
                 th, td {
-                    padding: 5px 10px;
+                    padding: 5px 20px;
                 }
 
                 th {
                     padding-bottom: 20px;
+
+                    code {
+                        color: $primary-color;
+                        padding: 10px 15px;
+                    }
+
+                    i {
+                        color: $primary-color;
+                        font-size: 60px;
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             
                 td {
                     color: $gray;
-                    width: 50%;
+                    // width: 50%;
 
                     strong {
                         color: $light-gray;
                     }
                 }
 
-                code {
-                    color: $primary-color;
-                    padding: 10px 15px;
-                }
             }
         }
     }

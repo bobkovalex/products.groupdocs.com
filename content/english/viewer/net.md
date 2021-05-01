@@ -83,20 +83,20 @@ overview:
             #### File Formats
           title: "GroupDocs.Viewer for .NET supports viewing all popular <a href='https://docs.groupdocs.com/viewer/net/supported-document-formats/'>document file formats</a>. With just a few lines of code, add PDF viewer, Microsoft Office Word, Excel spreadsheet, Image, HTML, Outlook email, OneNote, Project and graphics viewing capabilities in your .NET applications"
           content: |
-            | `Microsoft Office`                                                                      | `Other Formats`                                                    |
-            | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-            | **Word**: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT‎                                    | **PDF Formats**: PDF, TEX, XPS, OXPS                                 |
-            | **Excel**: XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC,        | **OpenDocument**: ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG |
-            | SpreadsheetML                       | **Delimiter-Separated Values**: CSV, TSV                             |
-            | **PowerPoint**: PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM | **Web**: HTML, MHT, MHTML                                            |
+            | `// Microsoft Office`                                                       | `// Other Formats`                                                    |
+            | :-------------------------------------------------------------------------- | :--------------------------------------------------------------- |
+            | **Word**: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT‎                        | **PDF Formats**: PDF, TEX, XPS, OXPS                                 |
+            | **Excel**: XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC,         | **OpenDocument**: ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG |
+            | SpreadsheetML                                                               | **Delimiter-Separated Values**: CSV, TSV                             |
+            | **PowerPoint**: PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM           | **Web**: HTML, MHT, MHTML                                            |
             | **Visio**: VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, | **Metafile**‎: WMF, EMF, CGM‎, WMZ, EMZ                                |
-            | VSDM                                              | **PostScript**: PS, EPS                                              |
-            | ‎**Project**: MPP, MPT, MPX                                          | **Archives**: ZIP, TAR, BZ2, GZ, RAR, RAR5                           |
-            | **Outlook**: MSG, EML, EMLX, PST, OST                                          | **Various**: OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF     |
-            | **OneNote**: ONE | |
+            | VSDM                                                                        | **PostScript**: PS, EPS                                              |
+            | ‎**Project**: MPP, MPT, MPX                                                  | **Archives**: ZIP, TAR, BZ2, GZ, RAR, RAR5                           |
+            | **Outlook**: MSG, EML, EMLX, PST, OST                                       | **Various**: OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF     |
+            | **OneNote**: ONE                                                            | |
 
-            | `Images, Graphics & Diagrams`  | `Programming Languages Formats` |
-            | --- | --- |
+            | `// Images, Graphics & Diagrams`  | `// Programming Languages Formats` |
+            | :--- | :--- |
             | **Images**: BMP, GIF, JPG, PNG, TIFF, multi-page TIFF, WebP, DNG, DIB, DCM | **C/C++/C# Files**: C, CC, CS, CPP, CXX, C#, H, HH, M, MM |
             | **Windows Icon**: ICO | **Java/JavaScript Files**: JAVA, JS, JSON, PROPERTIES |
             | **Scalable Vector Graphics**: SVG, CDR, CMX, IGS, SVGZ | **Various**: VB, PHP, SQL, PL, PY, PV, RB, RST, SASS, SCALA, SCM, SCRIPT, AS, AS3, |
@@ -117,11 +117,14 @@ overview:
             #### Independence
           title: "GroupDocs.Viewer for .NET supports following Operating Systems, Frameworks & Package Managers"
           content: |
-            ### Operating Systems
-            * Windows Desktop
-            * Windows Server
-            * Windows Azure
-            * Linux
+            | <i class="fab fa-windows"></i> | <i class="fas fa-code"></i> | <i class="fas fa-box"></i> |
+            | --- | --- | --- |
+            | **Operating Systems** | **Supported Frameworks** | **Package Manager** |
+            | Windows Desktop | .NET Framework 2.0 or higher |       NuGet     |
+            | Windows Server | Mono Framework 1.2 or higher | |
+            | Windows Azure | .NET Standard 2.0 | |
+            | Linux | .NET Core 2.0 | |
+            | | | |
 
 ############################# Features ############################
 features:

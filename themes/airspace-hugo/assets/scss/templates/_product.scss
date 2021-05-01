@@ -77,10 +77,38 @@
 .overview-tabs {
     .container {
         padding: 20px 30px;
-    }
-
-    p {
         color: #fff;
+
+        p {
+            color: #fff;
+            text-align: center;
+        }
+    
+        table {
+            margin: 40px 20px;
+        
+            th, td {
+                padding: 5px 10px;
+            }
+
+            th {
+                padding-bottom: 20px;
+            }
+        
+            td {
+                color: $grey;
+                width: 50%;
+
+                strong {
+                    color: $light-grey;
+                }
+            }
+
+            code {
+                color: $primary-color;
+                padding: 10px 15px;
+            }
+        }
     }
 }
 

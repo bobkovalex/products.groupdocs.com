@@ -111,6 +111,14 @@
         }
     }
 
+    .tab-content {
+        padding-top: 30px;
+
+        p {
+            text-align: center;
+        }
+    }
+
     .diagram1 {
         width: 840px;
         color: #6a6a6a;
@@ -242,7 +250,7 @@
         vertical-align: middle;
         font-size: 24px;
         padding-top: 8px;
-        padding-left:6px
+        padding-left: 0px
     }
     
     .diagram1 .d1-left HEADER {
@@ -407,97 +415,6 @@
         .diagram1 .d1-left > UL > li {
             padding-left: 0;
             padding-right:00px
-        }
-    }
-    
-    @media (min-width: 980px) and(max-width: 1200px) {
-        .pricing-module {
-            width: 100%;
-            height:550px
-        }
-    }
-    
-    @media (min-width: 768px) and(max-width: 979px) {
-        .pricing-module {
-            width: 100%;
-            height:600px
-        }
-    }
-    
-    @media (min-width: 668px) and(max-width: 767px) {
-        .pricing-module {
-            width: 100%;
-            height:600px
-        }
-    }
-    
-    @media (min-width: 641px) and(max-width: 667px) {
-        .pricing-module {
-            width: 100%;
-            height:900px
-        }
-    }
-    
-    @media (max-width: 967px) {
-        .carousel-control {
-            display:block
-        }
-    
-        .diagram-tab .item h3 {
-            display:block !important
-        }
-    }
-    
-    @media (max-width: 640px) {
-        .pricing-module {
-            width: 100%;
-            height:1000px
-        }
-    
-        .h2title, .h2title-white {
-            font-size:30px !important
-        }
-    
-        .box1 .col-md-2 {
-            float: left !important;
-            margin-right: 14px !important;
-            width:25% !important
-        }
-    
-        .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-            top:100%
-        }
-    }
-    
-    @media (max-width: 767px) {
-        .conversiondiagram ul {
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 0 0 30px !important;
-            list-style-type: square !important;
-            list-style-position:inside !important
-        }
-    
-        .conversiondiagram li {
-            width: 100% !important;
-            margin: 0 !important;
-            display:list-item !important
-        }
-    
-        .conversiondiagram li p {
-            border: 0 solid #ccc !important;
-            border-radius: 0 !important;
-            padding: 5px !important;
-            max-width: inherit !important;
-            min-height: inherit !important;
-            text-align: left !important;
-            margin: 0 auto !important;
-            width: 100% !important;
-            height:inherit !important
-        }
-    
-        .conversionbar, .conversiondiagram .circleicon, .conversiondiagram .neckbar {
-            display:none !important
         }
     }
 }

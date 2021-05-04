@@ -179,13 +179,13 @@
                                 </div>
                                 <!--/row-->
                                 <div class="d1-logo">
-                                    <img alt="File Viewer APIs" data-src="https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png" src="https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png">
-                                    <header>GroupDocs.Viewer</header>
+                                    {{ with .tab_three_logo }}
+                                    <img alt="{{ .img_alt }}" data-src="{{ .image }}" src="{{ .image }}">
+                                    <header>{{ .product | markdownify }}</header>
                                     <footer>
-                                        <small>
-                                            <em>for</em> .NET
-                                        </small>
+                                        <small><em>for</em> {{ .platform | markdownify }}</small>
                                     </footer>
+                                    {{ end }}
                                 </div>
                                 <!--/logo-->
                             </div>

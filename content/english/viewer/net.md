@@ -62,6 +62,7 @@ overview:
       tab_one_description: |
         Following is an overview of GroupDocs.Viewer for .NET:
       
+      ## TAB ONE ##
       tab_one_logo:
         img_alt: "Document Viewer APIs"
         image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png"
@@ -85,6 +86,7 @@ overview:
           * Render as Responsive HTML
           * Render PDF &amp; CAD Layers
       
+      ## TAB TWO ##
       tab_two_description: |
         GroupDocs.Viewer for .NET supports viewing all popular [document file formats](https://docs.groupdocs.com/viewer/net/supported-document-formats/). With just a few lines of code, add PDF viewer, Microsoft Office Word, Excel spreadsheet, Image, HTML, Outlook email, OneNote, Project and graphics viewing capabilities in your .NET applications.
 
@@ -147,8 +149,16 @@ overview:
               * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
               * **Various:** VB, PHP, SQL, PL, PY, PV, RB, RST, SASS, SCALA, SCM, SCRIPT, AS, AS3, ASM, BAT, CMAKE, CSS, DIFF, ERB, GROOVY, HAML, LESS, LOG, M, MAKE, MD, ML, MM, SH, SML, VIM, YAML
 
+      ## TAB THREE ##
       tab_three_description: |
         GroupDocs.Viewer for .NET supports following Operating Systems, Frameworks & Package Managers:‎
+
+      tab_three_logo:
+        img_alt: "File Viewer APIs"
+        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png"
+        product: "GroupDocs.Viewer"
+        platform: ".NET"
+      
       tab_three_left:
         enable: true
         table:

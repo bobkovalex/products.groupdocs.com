@@ -47,6 +47,7 @@
   {{ "<!-- Main stylesheet -->" | safeHTML }}
   {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify -}}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+  <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/groupdocs/optimized/bundles_gd.css" type="text/css">
 
   {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ `https://cms.admin.containerize.com/templates/groupdocs/images/favicon.ico` | relURL }}">

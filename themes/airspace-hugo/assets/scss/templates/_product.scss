@@ -66,72 +66,47 @@
 
 // Overview
 .overview-tabs {
-    .tabCommon {
-        text-align: center;
+    
+    ul.nav {
+        margin: 100px auto 0;
+        border: 0;
+        display: inline-flex;
+        float: none;
+        justify-content: center;
+        align-items: center;
+        width:100%;
 
-        .nav-tabs {
-          display: -webkit-inline-flex;
-          margin: 25px 0;
-          border: 0;
-      
-          li {
-            margin: 5px;
-            float: none;
-            color: $light-gray;
+        li {
+            font-size: 16px;
+            color: #7c7c7c;
+            background-color: $white;
+            font-weight: 400;
             padding: 10px 30px;
+            min-width: 200px;
+            text-align: center;
             cursor: pointer;
-          }
-      
-          li.active {
-            border-bottom: 2px solid $primary-color;
-            color: $primary-color;
-            p {
-              color: $primary-color;
-            }
-          }
         }
-      
-        .tab-content {
-          padding: 20px;
 
-            p {
-                color: $light-gray;
-                text-align: center;
-            }
-        
-            table {
-                margin: 50px auto;
-                table-layout: fixed;
-            
-                th, td {
-                    padding: 5px 20px;
-                }
+        .active {
+            color: #fff;
+            background-color: #1a89d0;
+            position: relative;
+            padding: 20px 30px;
+            margin-top: -20px;
 
-                th {
-                    padding-bottom: 20px;
-
-                    code {
-                        color: $primary-color;
-                        padding: 10px 15px;
-                    }
-
-                    i {
-                        color: $primary-color;
-                        font-size: 60px;
-                        width: 100%;
-                        text-align: center;
-                    }
-                }
-            
-                td {
-                    color: $gray;
-                    // width: 50%;
-
-                    strong {
-                        color: $light-gray;
-                    }
-                }
-
+            :after {
+                content: " ";
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(26, 137, 208, 0);
+                border-top-color: #1a89d0;
+                border-width: 10px;
+                margin-left:-10px
             }
         }
     }

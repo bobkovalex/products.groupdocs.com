@@ -11,6 +11,11 @@
     font-size: 18px;
     width: 48px;
     color: $white;
+    display: none;
+
+    &:hover {
+        color: $white;
+    }
 }
 
 .section-default-padding {

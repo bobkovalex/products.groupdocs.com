@@ -395,4 +395,8 @@ solutions:
           product: "GroupDocs.Classification"
           platform: ".NET"
           link: "/classification/net"
+
+############################# Back to top ###############################
+back_to_top:
+  enable: true
 ---

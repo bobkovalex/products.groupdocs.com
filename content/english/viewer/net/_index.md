@@ -379,4 +379,8 @@ solutions:
           product: "GroupDocs.Viewer"
           platform: "Java"
           link: "/viewer/java"
+
+############################# Back to top ###############################
+back_to_top:
+  enable: true
 ---

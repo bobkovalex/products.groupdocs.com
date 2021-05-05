@@ -419,6 +419,48 @@
     }
 }
 
+// APIs
+.apis {
+    .section-title > h2 {
+        text-transform: none;
+        font-weight: normal;
+        margin-top: 60px;
+    }
+
+    .apis-container {
+        h4 {
+            margin-bottom: 20px;
+            
+            a {
+                font-size: 13px;
+                color: $black;
+
+                img {
+                    float: left;
+                    margin-right: 10px;
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .api-product {
+                    padding-top: 10px;
+                }
+
+                .api-platform {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .btns {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+}
+
 // Products
 .products {
     img {

@@ -29,9 +29,9 @@
             {{ end }}
             {{ with .right }}
             <div class="col-sm-4 col-md-4">
-                <a href="{{ .link_download | relLangURL }}" class="btn btn-small btn-download animated fadeInUp"><i class="ion-android-arrow-down"></i> Download</a>
-                <a href="{{ .link_learn | relLangURL }}" class="btn btn-small btn-learn animated fadeInUp"><i class="ion-document-text"></i> Learn</a>
-                <a href="{{ .link_buy | relLangURL }}" class="btn btn-small btn-buy animated fadeInUp"><i class="ion-pricetag"></i> Buy</a>
+                <a href="{{ .link_download | relLangURL }}" class="btn btn-small btn-download animated fadeInUp"><i class="fas fa-arrow-down"></i> Download</a>
+                <a href="{{ .link_learn | relLangURL }}" class="btn btn-small btn-learn animated fadeInUp"><i class="fas fa-file-alt"></i> Learn</a>
+                <a href="{{ .link_buy | relLangURL }}" class="btn btn-small btn-buy animated fadeInUp"><i class="fas fa-shopping-cart"></i> Buy</a>
             </div>
             {{ end }}
         </div>
@@ -362,7 +362,7 @@
 <!-- ############ BACK 2 TOP ############ -->
 <a href="#top" id="back-top" class="back-to-top">
     <div>
-        <i class="ion-arrow-up-c"></i>
+        <i class="fas fa-arrow-up"></i>
     </div>
 </a>
 {{ end }}

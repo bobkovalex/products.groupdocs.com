@@ -28,16 +28,6 @@
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/google_analytics.html" . }}
 
-  {{- with site.Params.counter -}}
-  {{ if .enable -}}
-  {{ with .username -}}
-  {{ "<!-- counter.dev analytics -->" | safeHTML }}
-  {{ $counterjs := resources.Get "js/counter.min.js" | resources.ExecuteAsTemplate "js/counter.min.js" . -}}
-  <script src="{{ $counterjs.RelPermalink }}"></script>
-  {{- end }}
-  {{- end }}
-  {{- end }}
-
   {{ "<!-- Plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css -}}
   <link rel="stylesheet" href="{{ .link | relURL }}" {{ .attributes | safeHTMLAttr }}>
@@ -47,7 +37,6 @@
   {{ "<!-- Main stylesheet -->" | safeHTML }}
   {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify -}}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-  <!-- <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/groupdocs/optimized/bundles_gd.css" type="text/css"> -->
 
   {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ `https://cms.admin.containerize.com/templates/groupdocs/images/favicon.ico` | relURL }}">

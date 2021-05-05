@@ -8,7 +8,7 @@ date: 2021-04-27T09:31:06+03:00
 draft: false
 button:
     enable: true
-    icon: "ion-android-arrow-down"
+    icon: "fas fa-arrow-down"
     label: "Download Free Trial"
     link: "https://downloads.groupdocs.com/viewer"
 
@@ -359,11 +359,11 @@ support:
           label: "Blog"
 
     # buttons
-    icon_l: "ion-android-arrow-down"
+    icon_l: "fas fa-arrow-down"
     label_l: "Download Free Trial"
     link_l: "https://downloads.groupdocs.com/viewer"
 
-    icon_r: "ion-social-octocat"
+    icon_r: "fab fa-github-alt"
     label_r: "Download Examples"
     link_r: "http://groupdocs.github.io/"
 

@@ -24,10 +24,10 @@
 {{ end }}
 <!-- /banner -->
 
-<!-- service -->
-{{ with .Params.service }}
+<!-- product -->
+{{ with .Params.product }}
 {{ if .enable }}
-<section class="service">
+<section class="our-products">
   <div class="container">
     <div class="row">
       <div class="section-title">
@@ -36,19 +36,19 @@
       </div>
     </div>
     <div class="row">
-      {{ range .service_item }}
+      {{ range .product_item }}
       <div class="col-sm-12 col-md-6">
-        <div class="service-item">
+        <div class="product-item">
           <img src="{{ .image | relURL }}" />
           <h4><a href="{{ .link | relLangURL }}">{{ .name | markdownify }}</a></h4>
           <p>{{ .content | markdownify }}</p>
           {{ with .button_net }}
             {{ if .enable }}
               <a href="{{ .link | relLangURL }}">
-                <div class="btn btn-solid-border service-btn animated fadeInUp">
-                  <span class="service-btn-label">{{ .label | markdownify }} for</span>
+                <div class="btn btn-solid-border product-btn animated fadeInUp">
+                  <span class="product-btn-label">{{ .label | markdownify }} for</span>
                   <br>
-                  <span class="service-btn-platform">.NET</span>
+                  <span class="product-btn-platform">.NET</span>
                 </div>
               </a>
             {{ end }}
@@ -56,10 +56,10 @@
           {{ with .button_java }}
             {{ if .enable }}
               <a href="{{ .link | relLangURL }}">
-                <div class="btn btn-solid-border service-btn animated fadeInUp">
-                  <span class="service-btn-label">{{ .label | markdownify }} for</span>
+                <div class="btn btn-solid-border product-btn animated fadeInUp">
+                  <span class="product-btn-label">{{ .label | markdownify }} for</span>
                   <br>
-                  <span class="service-btn-platform">Java</span>
+                  <span class="product-btn-platform">Java</span>
                 </div>
               </a>
             {{ end }}
@@ -72,6 +72,6 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /service -->
+<!-- /product -->
 
 {{ end }}

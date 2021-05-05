@@ -12,13 +12,13 @@ banner:
     link: "https://downloads.groupdocs.com/"
 
 
-############################# Service ############################
-service:
+############################# Products ############################
+product:
   enable: true
   title: "Our Products"
   description: "Document automation has always been an complex process until now, <br> with GroupDocs APIs automate your documents in any way imaginable"
-  service_item:
-    # service item loop
+  product_item:
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-total-net.png?v2"
       name: GroupDocs.Total Product Family
       link: "total"
@@ -32,7 +32,7 @@ service:
         label: "GroupDocs.Total"
         link: "total/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-viewer-net.png?v2"
       name: GroupDocs.Viewer Product Family
       link: "viewer"
@@ -46,7 +46,7 @@ service:
         label: "GroupDocs.Viewer"
         link: "viewer/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-annotation-net.png?v2"
       name: GroupDocs.Annotation Product Family
       link: "annotation"
@@ -60,7 +60,7 @@ service:
         label: "GroupDocs.Annotation"
         link: "annotation/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-conversion-net.png?v2"
       name: GroupDocs.Conversion Product Family
       link: "conversion"
@@ -74,7 +74,7 @@ service:
         label: "GroupDocs.Conversion"
         link: "conversion/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-comparison-net.png?v2"
       name: GroupDocs.Comparison Product Family
       link: "comparison"
@@ -88,7 +88,7 @@ service:
         label: "GroupDocs.Comparison"
         link: "comparison/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-signature-net.png?v2"
       name: GroupDocs.Signature Product Family
       link: "signature"
@@ -102,7 +102,7 @@ service:
         label: "GroupDocs.Signature"
         link: "signature/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-assembly-net.png?v2"
       name: GroupDocs.Assembly Product Family
       link: "assembly"
@@ -116,7 +116,7 @@ service:
         label: "GroupDocs.Assembly"
         link: "assembly/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-metadata-net.png?v2"
       name: GroupDocs.Metadata Product Family
       link: "metadata"
@@ -130,7 +130,7 @@ service:
         label: "GroupDocs.Metadata"
         link: "metadata/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-search-net.png?v2"
       name: GroupDocs.Search Product Family
       link: "search"
@@ -144,7 +144,7 @@ service:
         label: "GroupDocs.Search"
         link: "search/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-parser-net.png?v2"
       name: GroupDocs.Parser Product Family
       link: "parser"
@@ -158,7 +158,7 @@ service:
         label: "GroupDocs.Parser"
         link: "parser/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-watermark-net.png?v2"
       name: GroupDocs.Watermark Product Family
       link: "watermark"
@@ -172,7 +172,7 @@ service:
         label: "GroupDocs.Watermark"
         link: "watermark/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-editor-net.png?v2"
       name: GroupDocs.Editor Product Family
       link: "editor"
@@ -186,7 +186,7 @@ service:
         label: "GroupDocs.Editor"
         link: "editor/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-merger-net.png?v2"
       name: GroupDocs.Merger Product Family
       link: "merger"
@@ -200,7 +200,7 @@ service:
         label: "GroupDocs.Merger"
         link: "merger/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-redaction-net.png?v2"
       name: GroupDocs.Redaction Product Family
       link: "redaction"
@@ -214,7 +214,7 @@ service:
         label: "GroupDocs.Redaction"
         link: "redaction/java"
 
-    # service item loop
+    # product item loop
     - image : "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-classification-net.png?v2"
       name: GroupDocs.Classification Product Family
       link: "classification"

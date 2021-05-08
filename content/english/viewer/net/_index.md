@@ -365,7 +365,7 @@ support:
 
     icon_r: "fab fa-github-alt"
     label_r: "Download Examples"
-    link_r: "http://groupdocs.github.io/"
+    link_r: "https://groupdocs-viewer.github.io"
 
 ############################# Solutions ############################
 solutions:

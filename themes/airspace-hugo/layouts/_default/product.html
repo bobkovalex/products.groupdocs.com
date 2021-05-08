@@ -5,38 +5,9 @@
 <!-- ############ SUB MENU ############ -->
 {{ with .Params.submenu }}
 {{ if .enable }}
-<a id="submenu" class="anchor" name="submenu"></a>
-<section class="submenu">
-    <div class="container section-default-padding">
-        <div class="row">
-            {{ with .left }}
-            <div class="col-sm-3 col-md-3">
-                <h4>
-                    <img alt="{{ .img_alt | markdownify }}" data-src="{{ .image | relURL }}" src="{{ .image | relURL }}">
-                    {{ .product | markdownify }}
-                    <div><small>for {{ .platform | markdownify }}</small></div>
-                </h4>
-            </div>
-            {{ end }}
-            {{ with .middle }}
-            <div class="col-sm-5 col-md-5">
-                <ul class="nav nav-pills mb-hide">
-                    {{ range .button }}
-                    <li><a href="{{ .link }}">{{ .text | markdownify }}</a></li>
-                    {{ end }}
-                </ul>
-            </div>
-            {{ end }}
-            {{ with .right }}
-            <div class="col-sm-4 col-md-4">
-                <a href="{{ .link_download | relLangURL }}" class="btn btn-small btn-download animated fadeInUp"><i class="fas fa-arrow-down"></i> Download</a>
-                <a href="{{ .link_learn | relLangURL }}" class="btn btn-small btn-learn animated fadeInUp"><i class="fas fa-file-alt"></i> Learn</a>
-                <a href="{{ .link_buy | relLangURL }}" class="btn btn-small btn-buy animated fadeInUp"><i class="fas fa-shopping-cart"></i> Buy</a>
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
+
+{{- partial "sub-menu.html" . -}}
+
 {{ end }}
 {{ end }}
 
@@ -322,9 +293,54 @@
 <!-- ############ SUPPORT ############ -->
 {{ with .Params.support}}
 {{ if .enable }}
-
-{{- partial "support.html" . -}}
-
+<a id="support" class="anchor" name="support"></a>
+<section class="support bg-primary">
+    <div class="container section-default-padding">
+        <div class="row">
+            <div class="section-title">
+                <h2>Support and Learning Resources</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h3>Learning Resources</h3>
+                    <p>
+                        <ul>
+                            {{ range .learning_resource}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="product-item">
+                    <h3>Product Support</h3>
+                    <p>
+                        <ul>
+                            {{ range .product_support}}
+                            <li>
+                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row support-btns">
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_l | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_l }}"></i> {{ .label_l }}</a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a href="{{ .link_r | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_r }}"></i> {{ .label_r }}</a>
+            </div>
+        </div>
+    </div>
+</section>
 {{ end }}
 {{ end }}
 
@@ -357,9 +373,9 @@
 {{ end }}
 {{ end }}
 
+<!-- ############ BACK 2 TOP ############ -->
 {{ with .Params.back_to_top }}
 {{ if .enable }}
-<!-- ############ BACK 2 TOP ############ -->
 <a href="#top" id="back-top" class="back-to-top">
     <div>
         <i class="fas fa-arrow-up"></i>

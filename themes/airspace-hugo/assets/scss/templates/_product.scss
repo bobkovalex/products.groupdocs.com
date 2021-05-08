@@ -37,7 +37,8 @@
 
     .nav {
         a {
-            color: $black;
+            color: $dark-gray;
+            font-weight: bold;
         }
     }
 }
@@ -542,3 +543,89 @@
     }
 }
 
+// Auto Gen
+.about, .steps, .demos, .about-format, .more-formats {
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        color: $black;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+.steps {
+    line-height: 26px;
+
+    h2 {
+        padding-bottom: 10px;
+        border-bottom: 1px dotted $gray;
+    }
+
+    p {
+        padding-top: 1px;
+    }
+
+    li {
+        list-style: disc;
+        margin-left: 40px;
+    }
+}
+
+.demos {
+    text-align: center;
+
+    .democard-container {
+        .democard {
+            background-color: $white;
+            margin: 5px;
+            padding: 30px 20px 20px 20px;
+            border-radius: 5px;
+            align-items: center;
+            justify-items: center;
+            min-height: 163px;
+
+            i {
+                font-size: 40px;
+                color: $primary-color;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.about-format {
+    text-align: center;
+    padding-bottom: 40px;
+
+    i {
+        font-size: 48px;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+}
+
+.more-formats {
+    text-align: center;
+
+    .formats {
+        h4 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

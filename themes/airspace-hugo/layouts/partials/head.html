@@ -9,8 +9,8 @@
   <meta name="msapplication-config" content="{{ `https://cms.admin.containerize.com/templates/groupdocs/images/browserconfig.xml` | relURL }}">
   <meta name="theme-color" content="#ffffff">
 
-  <title>{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <title>{{ with .Params.head_title }}{{ . }}{{ else }}{{ .Params.title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Params.head_description }}{{ . }}{{ else }}{{ with .Params.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Params.author }}
   <meta name="author" content="{{ . }}">
   {{ end }}

@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+<!-- ############ HEADER ############ -->
 {{ partial "page-title.html" . }}
 
 <!-- ############ SUB MENU ############ -->
@@ -285,7 +286,37 @@
 {{ with .Params.testimonials }}
 {{ if .enable }}
 
-{{- partial "testimonial.html" . -}}
+<a id="testimonials" class="anchor" name="testimonials"></a>
+<section class="testimonial section-sm {{ .bg_color }}">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>What People Are Saying</h2>
+                <p>Don't just take our word for it. See what other developers say about our APIs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-carousel text-center">
+                    <div class="testimonial-slider owl-carousel">
+                        {{ range .testimonial }}
+                        <div>
+                            <i class="fas fa-quote-right"></i>
+                            <p>{{ .content | markdownify }}</p>
+                            <div class="user">
+                                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <a href="" class="btn btn-small btn-learn animated fadeInUp">View More Testimonials</a>
+            </div>
+        </div>
+    </div>
+  </section>
 
 {{ end }}
 {{ end }}
@@ -376,11 +407,9 @@
 <!-- ############ BACK 2 TOP ############ -->
 {{ with .Params.back_to_top }}
 {{ if .enable }}
-<a href="#top" id="back-top" class="back-to-top">
-    <div>
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</a>
+
+{{- partial "back2top.html" . -}}
+
 {{ end }}
 {{ end }}
 

@@ -1,11 +1,18 @@
 ---
+############################# Static ############################
+layout: "product"
+date: 2021-04-27T09:31:06+03:00
+draft: false
+
+############################# Head ############################
+head_title: ".NET, Java, Cloud APIs & Online Document Viewer Apps by GroupDocs"
+head_description: "Get all-in-one document viewer solution for .NET, Java and cloud applications. View common document formats online using simple drag and drop feature."
+
+############################# Header ############################
 title: "Document Rendering and Viewing Solution"
 description: "‎Flexible document viewing solution for programmers and professionals to render and display widely used file formats anywhere.‎"
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
-layout: "product"
-date: 2021-04-27T09:31:06+03:00
-draft: false
 
 ############################# APIs ###############################
 apis:

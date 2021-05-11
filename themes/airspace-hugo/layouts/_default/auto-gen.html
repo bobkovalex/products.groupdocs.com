@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+<!-- ############ HEADER ############ -->
 {{ partial "page-title.html" . }}
 
 <!-- ############ SUB MENU ############ -->
@@ -88,14 +89,19 @@
 {{ end }}
 
 <!-- ############ ABOUT FORMAT ############ -->
-{{ with .Params.about_format }}
+{{ with .Params.about_formats }}
 {{ if .enable }}
 <section class="about-format bg-gray">
     <div class="container section-default-padding bg-white">
-        <i class="{{ .icon }}"></i>
-        <h2>{{ .title }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        <a class="btn-small" href="{{ .link | relURL }}">Read More</a>
+        {{ $len := (len .format) }}
+        {{ range .format }}
+        <div class="col-sm-{{ div 12 $len }} col-md-{{ div 12 $len }}">
+            <i class="{{ .icon }}"></i>
+            <h2>{{ .title }}</h2>
+            <p>{{ .content | markdownify }}</p>
+            <a class="btn-small" href="{{ .link | relURL }}">Read More</a>
+        </div>
+        {{ end }}
     </div>
 </section>
 {{ end }}
@@ -126,11 +132,9 @@
 <!-- ############ BACK 2 TOP ############ -->
 {{ with .Params.back_to_top }}
 {{ if .enable }}
-<a href="#top" id="back-top" class="back-to-top">
-    <div>
-        <i class="fas fa-arrow-up"></i>
-    </div>
-</a>
+
+{{- partial "back2top.html" . -}}
+
 {{ end }}
 {{ end }}
 

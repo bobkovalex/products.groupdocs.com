@@ -1,16 +1,23 @@
 ---
+############################# Static ############################
+layout: "product"
+date: 2021-04-27T09:31:06+03:00
+draft: false
+
+############################# Head ############################
+head_title: ".NET Document Viewer API, Render PDF Word Excel Image HTML Diagram"
+head_description: "C# ASP.NET file viewer & rendering API. Add PDF viewer, Word viewer, Excel viewer, Image viewer, HTML viewer, Email viewer features in .NET apps."
+
+############################# Header ############################
 title: "Render & Display Documents via .NET API"
 description: "‎.NET Document Viewer API to Render 170+ document formats into PDF, HTML and Image with Powerful ‎Configuration Options.‎"
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
-layout: "product"
-date: 2021-04-27T09:31:06+03:00
-draft: false
 button:
     enable: true
     icon: "fas fa-arrow-down"
     label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/viewer"
+    link: "https://downloads.groupdocs.com/viewer/net"
 
 ############################# SubMenu ############################
 submenu:
@@ -361,7 +368,7 @@ support:
     # buttons
     icon_l: "fas fa-arrow-down"
     label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/viewer"
+    link_l: "https://downloads.groupdocs.com/viewer/net"
 
     icon_r: "fab fa-github-alt"
     label_r: "Download Examples"

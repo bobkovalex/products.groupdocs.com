@@ -1,4 +1,8 @@
 ---
+############################# Head ############################
+head_title: ".NET & Java Document Automation APIs | GroupDocs"
+head_description: "Document automation APIs for .NET & Java developers to view annotate merge/diff convert e-sign or assemble documents"
+
 ############################### Banner ##############################
 banner:
   enable: true

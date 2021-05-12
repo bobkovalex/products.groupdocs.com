@@ -98,27 +98,6 @@ apis:
           platform: "PDF"
           content: "Annotate PDF directly from your web browser."
 
-############################# Testimonials ###############################
-testimonials:
-  enable: true
-  bg_color: "bg-gray"
-
-  testimonial:
-    # testimonial item loop
-    - name: "Margot Baill"
-      designation: "Product Development Director at Hireology"
-      content: "Integrating GroupDocs.Viewer for Cloud API was simple with their fantastic Ruby SDK. There aren't that many companies out there who are willing to work with us on what we want. It's a great partnership."
-
-    # testimonial item loop
-    - name: "Mats Oustad"
-      designation: "Senior Consultant/Partner at Novanet AS"
-      content: "After implementing and using GroupDocs.Viewer for .NET in the project it looks to be working very well. I have tested with a lot of documents and so far so good. Everything I've thrown at it renders nicely and looks just as good as it would in a PDF annotation or MS Word."
-              
-    # testimonial item loop
-    - name: "Martin Lasarga"
-      designation: "Product Manager at Axentria ECM by G.S.I."
-      content: "Excellent service and excellent products. They were extremely helpful and responsive during the GroupDocs.Viewer for .NET implementation process, can't recommend them highly enough."
-
 ############################# Back to top ###############################
 back_to_top:
   enable: true

@@ -21,7 +21,7 @@ apis:
   api:
     # api loop
     - title: "GroupDocs.Viewer On Premise APIs Include"
-      link: "https://products.groupdocs.com/viewer/family"
+      link: "/viewer"
       label: "View All On Premise APIs"
       api_product:
         # api_product loop
@@ -42,8 +42,8 @@ apis:
 
     # api loop
     - title: "GroupDocs.Viewer Cloud APIs Include"
-      link: "https://products.groupdocs.com/viewer/family"
-      label: "View All On Premise APIs"
+      link: "https://products.groupdocs.cloud/viewer"
+      label: "View All Cloud APIs"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.cloud/viewer/curl"
@@ -71,8 +71,8 @@ apis:
 
     # api loop
     - title: "GroupDocs.Viewer Cross Platform Apps Include"
-      link: "https://products.groupdocs.com/viewer/family"
-      label: "View All On Premise APIs"
+      link: "https://products.groupdocs.app/viewer"
+      label: "View All Cross Platform Apps"
       api_product:
         # api_product loop
         - link: "https://products.groupdocs.app/viewer/total"

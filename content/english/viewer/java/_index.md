@@ -44,7 +44,7 @@ submenu:
               text: "Support"
 
             # button loop
-            - link: "https://products.groupdocs.app/viewer/family"
+            - link: "https://products.groupdocs.app/viewer"
               text: "Live Demo"
 
             # button loop

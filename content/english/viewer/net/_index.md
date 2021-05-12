@@ -65,6 +65,7 @@ overview:
       GroupDocs.Viewer for .NET caches the rendered documents output to the local disk by default. Any type of external cache storage is also supported by implementing appropriate interfaces – Amazon S3, Dropbox, Google Drive, Windows Azure, Redis or any other.
     tabs:
       enable: true
+      platform: "net"
 
       tab_one_description: |
         Following is an overview of GroupDocs.Viewer for .NET:
@@ -302,8 +303,20 @@ features:
     more_feature:
       # more_feature_loop
       - title: "View Documents Efficiently & Reliably"
-        content: "Using GroupDocs.Viewer API you can display more than 90 document formats efficiently and reliably ‎with content and document structure integrity intact. Following sample code shows that how easy it is ‎to view HTML representation of a DOCX document:‎"
-        gist_link: "https://gist.github.com/bobkovalex/f5c79052644211472aa1660a3414f69c"
+        content: |
+          Using GroupDocs.Viewer API you can display more than 90 document formats efficiently and reliably ‎with content and document structure integrity intact. Following sample code shows that how easy it is ‎to view HTML representation of a DOCX document:‎
+
+          ```cs
+          // Set output directory for saving rendered pages
+          string  pageFilePathFormat = Path.Combine("D:\\output", "page_{0}.html");
+          using  (Viewer viewer = new Viewer("D:\\storage\\sample.docx"))
+          {
+              // Set options to get HTML with embedded resources
+              HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+              // Render document
+              viewer.View(options);
+          }
+          ```
 
       - title: "Apply Transformation to Rendered Output"
         content: "You can perform various transformations to the rendered output document using GroupDocs.Viewer ‎for .NET API. These transformation options give you control on the way you present the rendered ‎output for display. The available transformations are, page rotation option, page reorder option and ‎applying text watermark.‎"

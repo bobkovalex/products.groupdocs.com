@@ -52,7 +52,7 @@
                     <div class="tab-content carousel-inner">
                         <div class="item">
                             <p>{{ .tab_one_description | markdownify }}‎</p>
-                            <div class="diagram1 d1-net">
+                            <div class="diagram1 d1-{{ lower .platform }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">&nbsp;</div>
                                     <div class="d1-col d1-right">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="item active">
                             <p>{{ .tab_two_description | markdownify }}‎</p>
-                            <div class="diagram1 d2 d1-net">
+                            <div class="diagram1 d2 d1-{{ lower .platform }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
                                         {{ with .tab_two_left }}
@@ -120,7 +120,7 @@
                         </div>
                         <div class="item">
                             <p>{{ .tab_three_description | markdownify }}‎</p>
-                            <div class="diagram1 d1-net">
+                            <div class="diagram1 d1-{{ lower .platform }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
                                         {{ with .tab_three_left }}
@@ -270,9 +270,6 @@
                 <div class="more-feature-item">
                     <h3>{{ .title | markdownify }}</h4>
                     <p>{{ .content | markdownify }}</p>
-                    {{ if .gist_link }}
-                    <script src="{{ .gist_link | relURL }}.js"></script>
-                    {{ end }}
                 </div>
             </div>
             {{ end }}

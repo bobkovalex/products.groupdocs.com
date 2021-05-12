@@ -170,6 +170,7 @@ products:
 ############################# Features ############################
 features:
     enable: true
+    title: "Advanced API Features"
 
     feature:
       # feature loop

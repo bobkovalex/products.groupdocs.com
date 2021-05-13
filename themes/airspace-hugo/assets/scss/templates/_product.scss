@@ -484,6 +484,16 @@
         padding-bottom: 60px;
         color: $primary-color;
     }
+
+    ul {
+        margin-bottom: 20px;
+    
+        li {
+            color: #7b7b7b;
+            list-style: disc;
+            margin-left: 30px;
+        }
+    }
 }
 
 // Support

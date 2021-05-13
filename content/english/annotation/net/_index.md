@@ -64,116 +64,106 @@ overview:
     tabs:
       enable: true
       platform: "net"
-
-      tab_one_description: |
-        Following is an overview of GroupDocs.Annotation for .NET:
-      
-      ## TAB ONE ##
-      tab_one_logo:
+      logo:
         img_alt: "Document Annotation APIs"
         image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-net.png"
         product: "GroupDocs.Annotation"
         platform: ".NET"
       
-      tab_one_right:
-        enable: true
-        icon: "fab fa-html5"
-        title: "Overview"
-        content: |
-          * Add Annotations
-          * Export Annotations
-          * Import Annotations
-          * User Management
-          * Reply Based Comments
-          * Annotation Compatibility
-          * Abstract Storage
+      ## TAB ONE ##
+      tab_one:
+        description: |
+          Following is an overview of GroupDocs.Annotation for .NET:
+
+        right:
+          enable: true
+          icon: "fab fa-html5"
+          title: "Overview"
+          content: |
+            * Add Annotations
+            * Export Annotations
+            * Import Annotations
+            * User Management
+            * Reply Based Comments
+            * Annotation Compatibility
+            * Abstract Storage
       
       ## TAB TWO ##
-      tab_two_description: |
-        GroupDocs.Annotation for .NET supports all popular [document file formats](https://docs.groupdocs.com/annotation/net/supported-document-formats/) including: Microsoft Office, PDF, images and many others.
+      tab_two:
+        description: |
+          GroupDocs.Annotation for .NET supports all popular [document file formats](https://docs.groupdocs.com/annotation/net/supported-document-formats/) including: Microsoft Office, PDF, images and many others.
 
-      tab_two_logo:
-        img_alt: ".NET Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-net.png"
-        product: "GroupDocs.Annotation"
-        platform: ".NET"
+        left:
+          enable: true
+          table:
+            # table loop
+            - title: "Microsoft Office Formats"
+              content: |
+                * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTX, RTF
+                * **Microsoft Excel**: XLS, XLSX, XLSM, XLSB, CSV
+                * **Microsoft PowerPoint**: PPT, PPTX, PPTM, POTX, POTM, PPSM, PPS, PPSX
+                * **Microsoft Visio**: VSD, VSS, VSDX, VST
 
-      tab_two_left:
-        enable: true
-        table:
-          # table loop
-          - title: "Microsoft Office Formats"
-            content: |
-              * **Microsoft Word**: DOC, DOCX, DOCM, DOT, DOTX, RTF
-              * **Microsoft Excel**: XLS, XLSX, XLSM, XLSB, CSV
-              * **Microsoft PowerPoint**: PPT, PPTX, PPTM, POTX, POTM, PPSM, PPS, PPSX
-              * **Microsoft Visio**: VSD, VSS, VSDX, VST
-
-      tab_two_right:
-        enable: true
-        table:
-          # table loop
-          - title: "Other Formats"
-            content: |
-              * **Portable**: PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
-              * **OpenDocument**: OTP, ODT, OTT, ODS, ODP
-              * **Images**: BMP, GIF, JPG, JPEG, PNG, TIFF
-              * **AutoCAD**: CAD, DWG, DXF
-              * **Metafiles**: EMF, WMF
-              * **Email**: EML, EMLX, MSG
-              * **Web**: HTM, HTML
-              * **Others**: DICOM, DjVu
+        right:
+          enable: true
+          table:
+            # table loop
+            - title: "Other Formats"
+              content: |
+                * **Portable**: PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
+                * **OpenDocument**: OTP, ODT, OTT, ODS, ODP
+                * **Images**: BMP, GIF, JPG, JPEG, PNG, TIFF
+                * **AutoCAD**: CAD, DWG, DXF
+                * **Metafiles**: EMF, WMF
+                * **Email**: EML, EMLX, MSG
+                * **Web**: HTM, HTML
+                * **Others**: DICOM, DjVu
 
       ## TAB THREE ##
-      tab_three_description: |
-        GroupDocs.Annotation for .NET supports following Operating Systems, Frameworks & Package Managers:
+      tab_three:
+        description: |
+          GroupDocs.Annotation for .NET supports following Operating Systems, Frameworks & Package Managers:
+        
+        left:
+          enable: true
+          table:
+            # table loop
+            - icon: "fab fa-windows"
+              title: "Operating Systems"
+              content: |
+                * Windows Desktop (x86 & x64)
+                * Windows Server (x86 & x64)
+                * Windows Azure
+                * Linux
+                * MacOS
 
-      tab_three_logo:
-        img_alt: "File Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-net.png"
-        product: "GroupDocs.Annotation"
-        platform: ".NET"
-      
-      tab_three_left:
-        enable: true
-        table:
-          # table loop
-          - icon: "fab fa-windows"
-            title: "Operating Systems"
-            content: |
-              * Windows Desktop (x86 & x64)
-              * Windows Server (x86 & x64)
-              * Windows Azure
-              * Linux
-              * MacOS
+            # table loop
+            - icon: "fas fa-code"
+              title: "Supported Frameworks"
+              content: |
+                * .NET Standard 2.0
+                * .NET Framework 2.0 or higher
+                * .NET Core 2.0 or higher
+                * Mono Framework 1.2 or higher
 
-          # table loop
-          - icon: "fas fa-code"
-            title: "Supported Frameworks"
-            content: |
-              * .NET Standard 2.0
-              * .NET Framework 2.0 or higher
-              * .NET Core 2.0 or higher
-              * Mono Framework 1.2 or higher
-
-      tab_three_right:
-        enable: true
-        table:
-          # table loop
-          - icon: "fas fa-box"
-            title: "Package Manager"
-            content: |
-              * NuGet
-          
-          # table loop
-          - icon: "fas fa-tools"
-            title: "Development Environments"
-            content: |
-              * Microsoft Visual Studio
-              * Xamarin.Android
-              * Xamarin.IOS
-              * Xamarin.Mac
-              * MonoDevelop
+        right:
+          enable: true
+          table:
+            # table loop
+            - icon: "fas fa-box"
+              title: "Package Manager"
+              content: |
+                * NuGet
+            
+            # table loop
+            - icon: "fas fa-tools"
+              title: "Development Environments"
+              content: |
+                * Microsoft Visual Studio
+                * Xamarin.Android
+                * Xamarin.IOS
+                * Xamarin.Mac
+                * MonoDevelop
 
 ############################# Features ############################
 features:

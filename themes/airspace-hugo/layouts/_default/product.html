@@ -43,7 +43,6 @@
             </li>
         </ul>
     </div>
-    <!-- <div class="container section-default-padding"> -->
     <div class="row bg-white">
         <div class="container section-default-padding">
             <div class="col-md-12">
@@ -51,113 +50,105 @@
                 <div class="carousel slide" id="tabsCarousel">
                     <div class="tab-content carousel-inner">
                         <div class="item">
-                            <p>{{ .tab_one_description | markdownify }}‎</p>
+                            <p>{{ .tab_one.description | markdownify }}‎</p>
                             <div class="diagram1 d1-{{ lower .platform }}">
                                 <div class="d1-row">
-                                    <div class="d1-col d1-left">&nbsp;</div>
-                                    <div class="d1-col d1-right">
-                                        {{ with .tab_one_right }}
-                                        {{ if .enable }}
-                                        <header>
-                                            <i class="{{ .icon }}"></i> {{ .title | markdownify }}
-                                        </header>
-                                        {{ .content | markdownify }}
+                                    <div class="d1-col d1-left">
+                                        {{ with .tab_one.left }}
+                                            {{ if .enable }}
+                                                <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
+                                                {{ .content | markdownify }}
+                                            {{ end }}
                                         {{ end }}
+                                    </div>
+                                    <div class="d1-col d1-right">
+                                        {{ with .tab_one.right }}
+                                            {{ if .enable }}
+                                                <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
+                                                {{ .content | markdownify }}
+                                            {{ end }}
                                         {{ end }}
                                     </div>
                                 </div>
+                                <!-- logo -->
                                 <div class="d1-logo">
-                                    {{ with .tab_one_logo }}
-                                    <img alt="{{ .img_alt }}" data-src="{{ .image }}" src="{{ .image }}">
-                                    <header>{{ .product | markdownify }}</header>
+                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
+                                    <header>{{ .logo.product | markdownify }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .platform | markdownify }}</small>
+                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
                                     </footer>
-                                    {{ end }}
                                 </div>
-                                <!--/logo-->
+                                <!-- /logo -->
                             </div>
                         </div>
                         <div class="item active">
-                            <p>{{ .tab_two_description | markdownify }}‎</p>
+                            <p>{{ .tab_two.description | markdownify }}‎</p>
                             <div class="diagram1 d2 d1-{{ lower .platform }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
-                                        {{ with .tab_two_left }}
-                                        {{ if .enable }}
-                                        {{ range .table }}
-                                        <header>{{ .title | markdownify }}</header>
-                                        {{ .content | markdownify }}
-                                        {{ end }}
-                                        {{ end }}
+                                        {{ with .tab_two.left }}
+                                            {{ if .enable }}
+                                                {{ range .table }}
+                                                    <header>{{ .title | markdownify }}</header>
+                                                    {{ .content | markdownify }}
+                                                {{ end }}
+                                            {{ end }}
                                         {{ end }}
                                     </div>
-                                    <!--/left-->
                                     <div class="d1-col d1-right">
-                                        {{ with .tab_two_right }}
-                                        {{ if .enable }}
-                                        {{ range .table }}
-                                        <header>{{ .title | markdownify }}</header>
-                                        {{ .content | markdownify }}
-                                        {{ end }}
-                                        {{ end }}
+                                        {{ with .tab_two.right }}
+                                            {{ if .enable }}
+                                                {{ range .table }}
+                                                    <header>{{ .title | markdownify }}</header>
+                                                    {{ .content | markdownify }}
+                                                {{ end }}
+                                            {{ end }}
                                         {{ end }}
                                     </div>
-                                    <!--/right-->
                                 </div>
-                                <!--/row-->
+                                <!-- logo -->
                                 <div class="d1-logo">
-                                    {{ with .tab_two_logo }}
-                                    <img alt="{{ .img_alt }}" data-src="{{ .image }}" src="{{ .image }}">
-                                    <header>{{ .product | markdownify }}</header>
+                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
+                                    <header>{{ .logo.product | markdownify }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .platform | markdownify }}</small>
+                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
                                     </footer>
-                                    {{ end }}
                                 </div>
-                                <!--/logo-->
+                                <!-- /logo -->
                             </div>
                         </div>
                         <div class="item">
-                            <p>{{ .tab_three_description | markdownify }}‎</p>
+                            <p>{{ .tab_three.description | markdownify }}‎</p>
                             <div class="diagram1 d1-{{ lower .platform }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
-                                        {{ with .tab_three_left }}
-                                        {{ if .enable }}
-                                        {{ range .table }}
-                                        <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
-                                        {{ .content | markdownify }}
-                                        {{ end }}
-                                        {{ end }}
+                                        {{ with .tab_three.left }}
+                                            {{ if .enable }}
+                                                {{ range .table }}
+                                                    <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
+                                                    {{ .content | markdownify }}
+                                                {{ end }}
+                                            {{ end }}
                                         {{ end }}
                                     </div>
-                                    <!--/left-->
                                     <div class="d1-col d1-right">
-                                        {{ with .tab_three_right }}
-                                        {{ if .enable }}
-                                        {{ range .table }}
-                                        <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
-                                        {{ .content | markdownify }}
+                                        {{ with .tab_three.right }}
+                                            {{ if .enable }}
+                                                {{ range .table }}
+                                                    <header><i class="{{ .icon }}"></i> {{ .title | markdownify }}</header>
+                                                    {{ .content | markdownify }}
+                                                {{ end }}
+                                            {{ end }}
                                         {{ end }}
-                                        {{ end }}
-                                        {{ end }}
-                                        <!-- <header><i class="fas fa-box"></i> Package Manager</header>
-                                        <ul>
-                                            <li>NuGet</li>
-                                        </ul> -->
                                     </div>
-                                    <!--/right-->
                                 </div>
-                                <!--/row-->
+                                <!-- logo -->
                                 <div class="d1-logo">
-                                    {{ with .tab_three_logo }}
-                                    <img alt="{{ .img_alt }}" data-src="{{ .image }}" src="{{ .image }}">
-                                    <header>{{ .product | markdownify }}</header>
+                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
+                                    <header>{{ .logo.product | markdownify }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .platform | markdownify }}</small>
+                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
                                     </footer>
-                                    {{ end }}
                                 </div>
                                 <!--/logo-->
                             </div>

@@ -66,107 +66,98 @@ overview:
     tabs:
       enable: true
       platform: "java"
-
-      tab_one_description: |
-        Following is an overview of GroupDocs.Annotation for Java:
-      
-      ## TAB ONE ##
-      tab_one_logo:
+      logo:
         img_alt: "Document Annotation APIs"
         image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-java.png"
         product: "GroupDocs.Annotation"
         platform: "Java"
       
-      tab_one_right:
-        enable: true
-        icon: "fab fa-html5"
-        title: "Overview"
-        content: |
-          * Add Annotations
-          * Export Annotations
-          * Import Annotations
-          * User Management
-          * Reply Based Comments
-          * Annotation Compatibility
-          * Abstract Storage
+      
+      ## TAB ONE ##
+      tab_one:
+        description: |
+          Following is an overview of GroupDocs.Annotation for Java:
+      
+        right:
+          enable: true
+          icon: "fab fa-html5"
+          title: "Overview"
+          content: |
+            * Add Annotations
+            * Export Annotations
+            * Import Annotations
+            * User Management
+            * Reply Based Comments
+            * Annotation Compatibility
+            * Abstract Storage
       
       ## TAB TWO ##
-      tab_two_description: |
-        GroupDocs.Annotation for Java supports all popular [document file formats](https://docs.groupdocs.com/annotation/java/supported-document-formats/) including: Microsoft Office, PDF, images and many others.
+      tab_two:
+        description: |
+          GroupDocs.Annotation for Java supports all popular [document file formats](https://docs.groupdocs.com/annotation/java/supported-document-formats/) including: Microsoft Office, PDF, images and many others.
 
-      tab_two_logo:
-        img_alt: "Java Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-java.png"
-        product: "GroupDocs.Annotation"
-        platform: "Java"
+        left:
+          enable: true
+          table:
+            # table loop
+            - title: "Microsoft Office Formats"
+              content: |
+                * **Word**: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
+                * **Excel**: XLS, XLSX, XLSB, XLSM
+                * **PowerPoint**: PPT, PPTX, PPTM, POTX, POTM, PPS, PPSX, PPSM
+                * **Outlook**: EML, EMLX
+                * **Visio**: VSS, VST, VSD, VSDX
 
-      tab_two_left:
-        enable: true
-        table:
-          # table loop
-          - title: "Microsoft Office Formats"
-            content: |
-              * **Word**: DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF
-              * **Excel**: XLS, XLSX, XLSB, XLSM
-              * **PowerPoint**: PPT, PPTX, PPTM, POTX, POTM, PPS, PPSX, PPSM
-              * **Outlook**: EML, EMLX
-              * **Visio**: VSS, VST, VSD, VSDX
-
-      tab_two_right:
-        enable: true
-        table:
-          # table loop
-          - title: "Other Formats"
-            content: |
-              * **Portable**: PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
-              * **OpenDocument**: ODT, ODS, ODP
-              * **Images**: BMP, JPG, TIFF, TIF, PNG
-              * **AutoCAD**: DWG, DXF
-              * **Other**: HTML, DCM
+        right:
+          enable: true
+          table:
+            # table loop
+            - title: "Other Formats"
+              content: |
+                * **Portable**: PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
+                * **OpenDocument**: ODT, ODS, ODP
+                * **Images**: BMP, JPG, TIFF, TIF, PNG
+                * **AutoCAD**: DWG, DXF
+                * **Other**: HTML, DCM
 
       ## TAB THREE ##
-      tab_three_description: |
-        GroupDocs.Annotation for Java supports following Operating Systems, Frameworks & Package Managers:
-
-      tab_three_logo:
-        img_alt: "File Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-java.png"
-        product: "GroupDocs.Annotation"
-        platform: "Java"
+      tab_three:
+        description: |
+          GroupDocs.Annotation for Java supports following Operating Systems, Frameworks & Package Managers:
       
-      tab_three_left:
-        enable: true
-        table:
-          # table loop
-          - icon: "fab fa-windows"
-            title: "Operating Systems"
-            content: |
-              * Microsoft Windows Desktop
-              * Microsoft Windows Server
-              * Linux
-              * MacOS
+        left:
+          enable: true
+          table:
+            # table loop
+            - icon: "fab fa-windows"
+              title: "Operating Systems"
+              content: |
+                * Microsoft Windows Desktop
+                * Microsoft Windows Server
+                * Linux
+                * MacOS
 
-          # table loop
-          - icon: "fas fa-code"
-            title: "Supported Frameworks"
-            content: |
-              * Java 7 (1.7) and above
+            # table loop
+            - icon: "fas fa-code"
+              title: "Supported Frameworks"
+              content: |
+                * Java 7 (1.7) and above
 
-      tab_three_right:
-        enable: true
-        table:
-          # table loop
-          - icon: "fas fa-cogs"
-            title: "Development Environments"
-            content: |
-              * NetBeans
-              * IntelliJ IDEA
-              * Eclipse
-          # table loop
-          - icon: "fas fa-tools"
-            title: "Build Automation Tool"
-            content: |
-              * Maven
+        right:
+          enable: true
+          table:
+            # table loop
+            - icon: "fas fa-cogs"
+              title: "Development Environments"
+              content: |
+                * NetBeans
+                * IntelliJ IDEA
+                * Eclipse
+            # table loop
+            - icon: "fas fa-tools"
+              title: "Build Automation Tool"
+              content: |
+                * Maven
 
 ############################# Features ############################
 features:

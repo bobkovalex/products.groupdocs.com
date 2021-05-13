@@ -66,137 +66,127 @@ overview:
     tabs:
       enable: true
       platform: "net"
-
-      tab_one_description: |
-        Following is an overview of GroupDocs.Viewer for .NET:
-      
-      ## TAB ONE ##
-      tab_one_logo:
+      logo:
         img_alt: "Document Viewer APIs"
         image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png"
         product: "GroupDocs.Viewer"
         platform: ".NET"
       
-      tab_one_right:
-        enable: true
-        icon: "fab fa-html5"
-        title: "Overview"
-        content: |
-          * Display 170+ Document Types
-          * Get HTML, Image, PDF Version
-          * Rotate &amp; Reorder
-          * Apply Watermark
-          * Cache for Fast Process
-          * Add Custom Fonts
-          * Apply Encoding Standards
-          * Custom Input Data Handler
-          * Render with Track Changes
-          * Render as Responsive HTML
-          * Render PDF &amp; CAD Layers
+      ## TAB ONE ##
+      tab_one:
+        description: |
+          Following is an overview of GroupDocs.Viewer for .NET:
+      
+        right:
+          enable: true
+          icon: "fab fa-html5"
+          title: "Overview"
+          content: |
+            * Display 170+ Document Types
+            * Get HTML, Image, PDF Version
+            * Rotate &amp; Reorder
+            * Apply Watermark
+            * Cache for Fast Process
+            * Add Custom Fonts
+            * Apply Encoding Standards
+            * Custom Input Data Handler
+            * Render with Track Changes
+            * Render as Responsive HTML
+            * Render PDF &amp; CAD Layers
       
       ## TAB TWO ##
-      tab_two_description: |
-        GroupDocs.Viewer for .NET supports viewing all popular [document file formats](https://docs.groupdocs.com/viewer/net/supported-document-formats/). With just a few lines of code, add PDF viewer, Microsoft Office Word, Excel spreadsheet, Image, HTML, Outlook email, OneNote, Project and graphics viewing capabilities in your .NET applications.
+      tab_two:
+        description: |
+          GroupDocs.Viewer for .NET supports viewing all popular [document file formats](https://docs.groupdocs.com/viewer/net/supported-document-formats/). With just a few lines of code, add PDF viewer, Microsoft Office Word, Excel spreadsheet, Image, HTML, Outlook email, OneNote, Project and graphics viewing capabilities in your .NET applications.
 
-      tab_two_logo:
-        img_alt: ".NET Viewer APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png"
-        product: "GroupDocs.Viewer"
-        platform: ".NET"
+        left:
+          enable: true
+          table:
+            # table loop
+            - title: "Microsoft Office"
+              content: |
+                * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT‎
+                * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC, SpreadsheetML
+                * **PowerPoint:** PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM
+                * **Visio:** VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, VSDM
+                * **Project:** MPP, MPT, MPX
+                * **Outlook:** MSG, EML, EMLX, PST, OST‎
+                * **OneNote:** ONE
 
-      tab_two_left:
-        enable: true
-        table:
-          # table loop
-          - title: "Microsoft Office"
-            content: |
-              * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT‎
-              * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX, XLAM, SXC, SpreadsheetML
-              * **PowerPoint:** PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM
-              * **Visio:** VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, VSDM
-              * **Project:** MPP, MPT, MPX
-              * **Outlook:** MSG, EML, EMLX, PST, OST‎
-              * **OneNote:** ONE
+            # table loop
+            - title: "Other Formats"
+              content: |
+                * **PDF Formats:** PDF, TEX, XPS, OXPS
+                * **OpenDocument:** ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG
+                * **Delimiter-Separated Values:** CSV, TSV
+                * **Web:** HTML, MHT, MHTML
+                * **Metafile‎:** WMF, EMF, CGM‎, WMZ, EMZ
+                * **PostScript:** PS, EPS
+                * **Archives:** ZIP, TAR, BZ2, GZ, RAR, RAR5
+                * **Various:** OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF
 
-          # table loop
-          - title: "Other Formats"
-            content: |
-              * **PDF Formats:** PDF, TEX, XPS, OXPS
-              * **OpenDocument:** ODT, OTT, ODS, ODP, OTP, OTS, ODG, OTG, FODP, FODG
-              * **Delimiter-Separated Values:** CSV, TSV
-              * **Web:** HTML, MHT, MHTML
-              * **Metafile‎:** WMF, EMF, CGM‎, WMZ, EMZ
-              * **PostScript:** PS, EPS
-              * **Archives:** ZIP, TAR, BZ2, GZ, RAR, RAR5
-              * **Various:** OBJ, EPUB, MOBI, DjVu, XML, VCF, VCARD, NUMBER, NSF
+        right:
+          enable: true
+          table:
+            # table loop
+            - title: "Images, Graphics & Diagrams"
+              content: |
+                * **Images:** BMP, GIF, JPG, PNG, TIFF, multi-page TIFF, WebP, DNG, DIB, DCM
+                * **Windows Icon:** ICO
+                * **Scalable Vector Graphics:** SVG, CDR, CMX, IGS, SVGZ
+                * **Jpeg2000:** JP2, J2C, J2K, JPC, JPF, JPX, JPM
+                * **Adobe Photoshop:** PSD, PSB
+                * **Printer Command Language:** PCL
+                * **Stereo Lithography (3D Printing)‎:** STL
+                * **Industry Foundation Classes:** IFC
+                * **Medical Imaging:** DICOM
+                * **Plotter Documents:** PLT, HPG
+                * **Autodesk Design Web Formats:** DWF, DWG
+                * **AutoCAD Drawing:** DGN, DWT, IFC, STL, CF2
+                * **ISFF-based DGN (V7):** DGN
 
-      tab_two_right:
-        enable: true
-        table:
-          # table loop
-          - title: "Images, Graphics & Diagrams"
-            content: |
-              * **Images:** BMP, GIF, JPG, PNG, TIFF, multi-page TIFF, WebP, DNG, DIB, DCM
-              * **Windows Icon:** ICO
-              * **Scalable Vector Graphics:** SVG, CDR, CMX, IGS, SVGZ
-              * **Jpeg2000:** JP2, J2C, J2K, JPC, JPF, JPX, JPM
-              * **Adobe Photoshop:** PSD, PSB
-              * **Printer Command Language:** PCL
-              * **Stereo Lithography (3D Printing)‎:** STL
-              * **Industry Foundation Classes:** IFC
-              * **Medical Imaging:** DICOM
-              * **Plotter Documents:** PLT, HPG
-              * **Autodesk Design Web Formats:** DWF, DWG
-              * **AutoCAD Drawing:** DGN, DWT, IFC, STL, CF2
-              * **ISFF-based DGN (V7):** DGN
-
-          # table loop
-          - title: "Programming Languages Formats"
-            content: |
-              * **C/C++/C# Files:** C, CC, CS, CPP, CXX, C#, H, HH, M, MM
-              * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
-              * **Various:** VB, PHP, SQL, PL, PY, PV, RB, RST, SASS, SCALA, SCM, SCRIPT, AS, AS3, ASM, BAT, CMAKE, CSS, DIFF, ERB, GROOVY, HAML, LESS, LOG, M, MAKE, MD, ML, MM, SH, SML, VIM, YAML
+            # table loop
+            - title: "Programming Languages Formats"
+              content: |
+                * **C/C++/C# Files:** C, CC, CS, CPP, CXX, C#, H, HH, M, MM
+                * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
+                * **Various:** VB, PHP, SQL, PL, PY, PV, RB, RST, SASS, SCALA, SCM, SCRIPT, AS, AS3, ASM, BAT, CMAKE, CSS, DIFF, ERB, GROOVY, HAML, LESS, LOG, M, MAKE, MD, ML, MM, SH, SML, VIM, YAML
 
       ## TAB THREE ##
-      tab_three_description: |
-        GroupDocs.Viewer for .NET supports following Operating Systems, Frameworks & Package Managers:‎
+      tab_three:
+        description: |
+          GroupDocs.Viewer for .NET supports following Operating Systems, Frameworks & Package Managers:‎
+        
+        left:
+          enable: true
+          table:
+            # table loop
+            - icon: "fab fa-windows"
+              title: "Operating Systems"
+              content: |
+                * Windows Desktop
+                * Windows Server
+                * Windows Azure
+                * Linux
 
-      tab_three_logo:
-        img_alt: "File Viewer APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-net.png"
-        product: "GroupDocs.Viewer"
-        platform: ".NET"
-      
-      tab_three_left:
-        enable: true
-        table:
-          # table loop
-          - icon: "fab fa-windows"
-            title: "Operating Systems"
-            content: |
-              * Windows Desktop
-              * Windows Server
-              * Windows Azure
-              * Linux
+            # table loop
+            - icon: "fas fa-code"
+              title: "Supported Frameworks"
+              content: |
+                * .NET Framework 2.0 or higher
+                * Mono Framework 1.2 or higher
+                * .NET Standard 2.0
+                * .NET Core 2.0
+                * .NET Core 2.1
 
-          # table loop
-          - icon: "fas fa-code"
-            title: "Supported Frameworks"
-            content: |
-              * .NET Framework 2.0 or higher
-              * Mono Framework 1.2 or higher
-              * .NET Standard 2.0
-              * .NET Core 2.0
-              * .NET Core 2.1
-
-      tab_three_right:
-        enable: true
-        table:
-          # table loop
-          - icon: "fas fa-box"
-            title: "Package Manager"
-            content: |
-              * NuGet
+        right:
+          enable: true
+          table:
+            # table loop
+            - icon: "fas fa-box"
+              title: "Package Manager"
+              content: |
+                * NuGet
 
 ############################# Features ############################
 features:

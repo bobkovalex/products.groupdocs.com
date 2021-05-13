@@ -51,7 +51,7 @@
                     <div class="tab-content carousel-inner">
                         <div class="item">
                             <p>{{ .tab_one.description | markdownify }}‎</p>
-                            <div class="diagram1 d1-{{ lower .platform }}">
+                            <div class="diagram1 d1-{{ $.Params.platform_tag }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
                                         {{ with .tab_one.left }}
@@ -72,10 +72,10 @@
                                 </div>
                                 <!-- logo -->
                                 <div class="d1-logo">
-                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
-                                    <header>{{ .logo.product | markdownify }}</header>
+                                    <img alt="GroupDocs.{{ $.Params.product }} for {{ $.Params.platform }}" data-src="{{ .logo.image }}" src="https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-{{ $.Params.product_tag }}-{{ $.Params.platform_tag }}.png">
+                                    <header>GroupDocs.{{ $.Params.product }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
+                                        <small><em>for</em> {{ $.Params.platform }}</small>
                                     </footer>
                                 </div>
                                 <!-- /logo -->
@@ -83,7 +83,7 @@
                         </div>
                         <div class="item active">
                             <p>{{ .tab_two.description | markdownify }}‎</p>
-                            <div class="diagram1 d2 d1-{{ lower .platform }}">
+                            <div class="diagram1 d2 d1-{{ $.Params.platform_tag }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
                                         {{ with .tab_two.left }}
@@ -108,10 +108,10 @@
                                 </div>
                                 <!-- logo -->
                                 <div class="d1-logo">
-                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
-                                    <header>{{ .logo.product | markdownify }}</header>
+                                    <img alt="GroupDocs.{{ $.Params.product }} for {{ $.Params.platform }}" data-src="{{ .logo.image }}" src="https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-{{ $.Params.product_tag }}-{{ $.Params.platform_tag }}.png">
+                                    <header>GroupDocs.{{ $.Params.product }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
+                                        <small><em>for</em> {{ $.Params.platform }}</small>
                                     </footer>
                                 </div>
                                 <!-- /logo -->
@@ -119,7 +119,7 @@
                         </div>
                         <div class="item">
                             <p>{{ .tab_three.description | markdownify }}‎</p>
-                            <div class="diagram1 d1-{{ lower .platform }}">
+                            <div class="diagram1 d1-{{ $.Params.platform_tag }}">
                                 <div class="d1-row">
                                     <div class="d1-col d1-left">
                                         {{ with .tab_three.left }}
@@ -144,10 +144,10 @@
                                 </div>
                                 <!-- logo -->
                                 <div class="d1-logo">
-                                    <img alt="{{ .logo.img_alt }}" data-src="{{ .logo.image }}" src="{{ .logo.image }}">
-                                    <header>{{ .logo.product | markdownify }}</header>
+                                    <img alt="GroupDocs.{{ $.Params.product }} for {{ $.Params.platform }}" data-src="{{ .logo.image }}" src="https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-{{ $.Params.product_tag }}-{{ $.Params.platform_tag }}.png">
+                                    <header>GroupDocs.{{ $.Params.product }}</header>
                                     <footer>
-                                        <small><em>for</em> {{ .logo.platform | markdownify }}</small>
+                                        <small><em>for</em> {{ $.Params.platform }}</small>
                                     </footer>
                                 </div>
                                 <!--/logo-->
@@ -326,11 +326,18 @@
                     <h3>Learning Resources</h3>
                     <p>
                         <ul>
-                            {{ range .learning_resource}}
                             <li>
-                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                                <a href="https://docs.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}">Documentation</a>
                             </li>
-                            {{ end }}
+                            <li>
+                                <a href="https://github.com/groupdocs-{{ $.Params.product_tag }}">Source Code</a>
+                            </li>
+                            <li>
+                                <a href="https://apireference.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}">API References</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g">Video Tutorials</a>
+                            </li>
                         </ul>
                     </p>
                 </div>
@@ -340,11 +347,18 @@
                     <h3>Product Support</h3>
                     <p>
                         <ul>
-                            {{ range .product_support}}
                             <li>
-                                <a href="{{ .link | relURL}}">{{ .label | markdownify }}</a>
+                                <a href="https://forum.groupdocs.com/c/{{ $.Params.product_tag }}">Free Support</a>
                             </li>
-                            {{ end }}
+                            <li>
+                                <a href="https://helpdesk.groupdocs.com/">Paid Support</a>
+                            </li>
+                            <li>
+                                <a href="https://blog.groupdocs.com/category/{{ $.Params.product_tag }}">Blog</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}/release-notes">Release Notes</a>
+                            </li>
                         </ul>
                     </p>
                 </div>
@@ -352,10 +366,10 @@
         </div>
         <div class="row support-btns">
             <div class="col-sm-6 col-md-6">
-                <a href="{{ .link_l | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_l }}"></i> {{ .label_l }}</a>
+                <a href="https://downloads.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}" class="btn btn-support btn-icon animated fadeInUp"><i class="fas fa-arrow-down"></i> Download Free Trial</a>
             </div>
             <div class="col-sm-6 col-md-6">
-                <a href="{{ .link_r | relLangURL }}" class="btn btn-support btn-icon animated fadeInUp"><i class="{{ .icon_r }}"></i> {{ .label_r }}</a>
+                <a href="https://github.com/groupdocs-{{ $.Params.product_tag }}" class="btn btn-support btn-icon animated fadeInUp"><i class="fab fa-github-alt"></i> Download Examples</a>
             </div>
         </div>
     </div>

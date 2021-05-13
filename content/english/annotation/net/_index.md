@@ -4,6 +4,11 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product: "Annotation"
+product_tag: "annotation"
+platform: ".NET"
+platform_tag: "net"
+
 ############################# Head ############################
 head_title: "C# .NET Document Annotation API | Annotate PDF Word Excel PPTX Image Files"
 head_description: "C# .NET Document Annotation API. View, tag, comment & annotate PDF Word DOC DOCX, Excel XLS XLSX, PPT PPTX, OTP, CAD, EMF WMF & image files."
@@ -11,13 +16,8 @@ head_description: "C# .NET Document Annotation API. View, tag, comment & annotat
 ############################# Header ############################
 title: "Annotate Text or Images in Documents"
 description: "‎Empower your .NET Applications to Add, Edit & Remove all Popular Annotation Types from over 50 document formats for an Easier & Efficient Collaboration.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 button:
     enable: true
-    icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/annotation/net"
 
 ############################# SubMenu ############################
 submenu:
@@ -63,12 +63,6 @@ overview:
       GroupDocs.Annotation for .NET is a comprehensive set of APIs that helps you build document annotation management applications in C#, ASP.NET and other related .NET technologies. You can create and work with all popular annotation types, such as area, point, text, ellipse, link, underline, polyline, arrow, distance, watermark, image etc for PDF, HTML, Microsoft Office Word, Excel spreadsheets, PowerPoint presentations, Visio, images, CAD drawing and various other formats. The document annotator library allows you to export documents after adding annotations, comments or highlighted notes back to its original format. It also gives you a handy set of data objects through which you can customize annotations as per your requirements.
     tabs:
       enable: true
-      platform: "net"
-      logo:
-        img_alt: "Document Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-net.png"
-        product: "GroupDocs.Annotation"
-        platform: ".NET"
       
       ## TAB ONE ##
       tab_one:
@@ -307,45 +301,6 @@ features:
 ############################# Support ############################
 support:
     enable: true
-
-    learning_resource:
-        # learning_resource loop
-        - link: "https://docs.groupdocs.com/annotation/net/"
-          label: "Documentation"
-
-        # learning_resource loop
-        - link: "https://groupdocs.github.io/"
-          label: "Source Code"
-
-        # learning_resource loop
-        - link: "https://apireference.groupdocs.com/"
-          label: "API References"
-
-        # learning_resource loop
-        - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
-
-    product_support:
-        # product_support loop
-        - link: "https://forum.groupdocs.com/c/annotation"
-          label: "Free Support"
-
-        # product_support loop
-        - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
-
-        # product_support loop
-        - link: "https://blog.groupdocs.com/category/annotation/"
-          label: "Blog"
-
-    # buttons
-    icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/annotation/net"
-
-    icon_r: "fab fa-github-alt"
-    label_r: "Download Examples"
-    link_r: "https://groupdocs-annotation.github.io"
 
 ############################# Solutions ############################
 solutions:

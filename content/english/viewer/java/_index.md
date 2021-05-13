@@ -4,6 +4,11 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product: "Viewer"
+product_tag: "viewer"
+platform: "Java"
+platform_tag: "java"
+
 ############################# Head ############################
 head_title: "Java Document Viewer API for PDF Word Excel HTML Images & Emails"
 head_description: "Java document viewer & files rendering API. Add PDF viewer, Word viewer, Excel viewer, Image viewer, HTML viewer, Email viewer in Java applications."
@@ -11,13 +16,8 @@ head_description: "Java document viewer & files rendering API. Add PDF viewer, W
 ############################# Header ############################
 title: "Java API to Render & Display Documents"
 description: "‎Document Viewer Library to Develop Java Applications that Natively Render, View and Manipulate, Multi-Format ‎Documents Supporting 150+ File Formats.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 button:
     enable: true
-    icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/viewer/java"
 
 ############################# SubMenu ############################
 submenu:
@@ -66,13 +66,7 @@ overview:
         
       GroupDocs.Viewer for Java is compatible with all Java versions and supports popular operating systems (Windows, Linux, macOS) that are capable to run Java runtime.
     tabs:
-      enable: true
-      platform: "java"
-      logo:
-        img_alt: "Document Viewer APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-viewer-java.png"
-        product: "GroupDocs.Viewer"
-        platform: "Java"      
+      enable: true     
       
       ## TAB ONE ##
       tab_one:
@@ -321,45 +315,6 @@ features:
 ############################# Support ############################
 support:
     enable: true
-
-    learning_resource:
-        # learning_resource loop
-        - link: "https://docs.groupdocs.com/viewer/java/"
-          label: "Documentation"
-
-        # learning_resource loop
-        - link: "https://groupdocs.github.io/"
-          label: "Source Code"
-
-        # learning_resource loop
-        - link: "https://apireference.groupdocs.com/"
-          label: "API References"
-
-        # learning_resource loop
-        - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
-
-    product_support:
-        # product_support loop
-        - link: "https://forum.groupdocs.com/c/viewer"
-          label: "Free Support"
-
-        # product_support loop
-        - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
-
-        # product_support loop
-        - link: "https://blog.groupdocs.com/category/viewer/"
-          label: "Blog"
-
-    # buttons
-    icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/viewer/java"
-
-    icon_r: "fab fa-github-alt"
-    label_r: "Download Examples"
-    link_r: "https://groupdocs-viewer.github.io"
 
 ############################# Solutions ############################
 solutions:

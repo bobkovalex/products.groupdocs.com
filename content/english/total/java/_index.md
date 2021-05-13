@@ -4,6 +4,11 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product: "Total"
+product_tag: "total"
+platform: "Java"
+platform_tag: "java"
+
 ############################# Head ############################
 head_title: "Java APIs to View, Convert, Annotate, Sign, Automate & Search File Formats"
 head_description: "Use the Java versions of the GroupDocs document manipulation APIs to integrate them with your own platforms and Java apps"
@@ -11,13 +16,8 @@ head_description: "Use the Java versions of the GroupDocs document manipulation 
 ############################# Header ############################
 title: "Java Document Automation Libraries"
 description: "APIs to View, Export, Annotate, Compare, Sign, Automate and Search documents from within any Java application."
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 button:
     enable: true
-    icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/total/java"
 
 ############################# SubMenu ############################
 submenu:
@@ -258,45 +258,6 @@ features:
 ############################# Support ############################
 support:
     enable: true
-
-    learning_resource:
-        # learning_resource loop
-        - link: "https://docs.groupdocs.com/total/java/"
-          label: "Documentation"
-
-        # learning_resource loop
-        - link: "https://groupdocs.github.io/"
-          label: "Source Code"
-
-        # learning_resource loop
-        - link: "https://apireference.groupdocs.com/"
-          label: "API References"
-
-        # learning_resource loop
-        - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
-
-    product_support:
-        # product_support loop
-        - link: "https://forum.groupdocs.com/c/total"
-          label: "Free Support"
-
-        # product_support loop
-        - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
-
-        # product_support loop
-        - link: "https://blog.groupdocs.com/category/total/"
-          label: "Blog"
-
-    # buttons
-    icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/total"
-
-    icon_r: "fab fa-github-alt"
-    label_r: "Download Examples"
-    link_r: "https://groupdocs-total.github.io"
 
 ############################# Solutions ############################
 solutions:

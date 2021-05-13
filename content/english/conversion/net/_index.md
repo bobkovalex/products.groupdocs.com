@@ -4,6 +4,11 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product: "Conversion"
+product_tag: "conversion"
+platform: ".NET"
+platform_tag: "net"
+
 ############################# Head ############################
 head_title: "C# .NET Document Conversion API | Convert PDF Word Excel PPTX HTML Images"
 head_description: "C# .NET Document Conversion API. Convert PDF Word DOC DOCX, Excel Spreadsheets PPT PPTX, HTML, PSD, MPT MPP, Email MSG EMLX, AutoCAD & image file formats."
@@ -11,13 +16,8 @@ head_description: "C# .NET Document Conversion API. Convert PDF Word DOC DOCX, E
 ############################# Header ############################
 title: ".NET API to Convert 80+ File Formats"
 description: "‎Simple API to Integrate Document & Image Conversion Functionality into .NET Applications without Installing any External Software.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 button:
     enable: true
-    icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/conversion/net"
 
 ############################# SubMenu ############################
 submenu:
@@ -65,12 +65,6 @@ overview:
       GroupDocs.Conversion for .NET can be used to develop applications in any development environment that targets .NET platform. It is compatible with all .NET based languages and supports popular operating systems (Windows, Linux, MacOS) where Mono or .NET frameworks (including .NET Core) can be installed.
     tabs:
       enable: true
-      platform: "net"
-      logo:
-        img_alt: "Document Conversion APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-conversion-net.png"
-        product: "GroupDocs.Conversion"
-        platform: ".NET"
       
       ## TAB ONE ##
       tab_one:
@@ -348,45 +342,6 @@ features:
 ############################# Support ############################
 support:
     enable: true
-
-    learning_resource:
-        # learning_resource loop
-        - link: "https://docs.groupdocs.com/conversion/net/"
-          label: "Documentation"
-
-        # learning_resource loop
-        - link: "https://groupdocs.github.io/"
-          label: "Source Code"
-
-        # learning_resource loop
-        - link: "https://apireference.groupdocs.com/"
-          label: "API References"
-
-        # learning_resource loop
-        - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
-
-    product_support:
-        # product_support loop
-        - link: "https://forum.groupdocs.com/c/conversion"
-          label: "Free Support"
-
-        # product_support loop
-        - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
-
-        # product_support loop
-        - link: "https://blog.groupdocs.com/category/conversion/"
-          label: "Blog"
-
-    # buttons
-    icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/conversion/net"
-
-    icon_r: "fab fa-github-alt"
-    label_r: "Download Examples"
-    link_r: "https://groupdocs-conversion.github.io"
 
 ############################# Solutions ############################
 solutions:

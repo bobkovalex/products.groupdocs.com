@@ -4,6 +4,11 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product: "Annotation"
+product_tag: "annotation"
+platform: "Java"
+platform_tag: "java"
+
 ############################# Head ############################
 head_title: "Java Document Annotation API | View & Annotate PDF Word Excel PPTX Images"
 head_description: "Java Document Annotation API. View, tag, comment & annotate PDF Word DOCX, Excel XLSX, PPTX, EML EMLX, VSS VSD, OTP, CAD, EMF WMF & image file formats."
@@ -11,13 +16,8 @@ head_description: "Java Document Annotation API. View, tag, comment & annotate P
 ############################# Header ############################
 title: "Document Annotation via Java API"
 description: "‎Build Java Applications with capabilities to View & Annotate PDF, HTML, MS Office and other document formats without installing any external software.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 button:
     enable: true
-    icon: "fas fa-arrow-down"
-    label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/annotation/java"
 
 ############################# SubMenu ############################
 submenu:
@@ -65,13 +65,6 @@ overview:
       The API provides the ability to get thumbnails of document pages and supports importing and exporting annotation to and from PDF files.
     tabs:
       enable: true
-      platform: "java"
-      logo:
-        img_alt: "Document Annotation APIs"
-        image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-annotation-java.png"
-        product: "GroupDocs.Annotation"
-        platform: "Java"
-      
       
       ## TAB ONE ##
       tab_one:
@@ -286,45 +279,6 @@ features:
 ############################# Support ############################
 support:
     enable: true
-
-    learning_resource:
-        # learning_resource loop
-        - link: "https://docs.groupdocs.com/annotation/java/"
-          label: "Documentation"
-
-        # learning_resource loop
-        - link: "https://groupdocs.github.io/"
-          label: "Source Code"
-
-        # learning_resource loop
-        - link: "https://apireference.groupdocs.com/"
-          label: "API References"
-
-        # learning_resource loop
-        - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
-
-    product_support:
-        # product_support loop
-        - link: "https://forum.groupdocs.com/c/annotation"
-          label: "Free Support"
-
-        # product_support loop
-        - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
-
-        # product_support loop
-        - link: "https://blog.groupdocs.com/category/annotation/"
-          label: "Blog"
-
-    # buttons
-    icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/annotation/java"
-
-    icon_r: "fab fa-github-alt"
-    label_r: "Download Examples"
-    link_r: "https://groupdocs-annotation.github.io"
 
 ############################# Solutions ############################
 solutions:

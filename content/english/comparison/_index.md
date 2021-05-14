@@ -11,8 +11,6 @@ head_description: "Document Comparison Library native to C# ASP.NET & Java. Comp
 ############################# Header ############################
 title: "Document Comparison APIs for Popular Formats"
 description: "‎Develop native .NET & Java apps with highly configurable comparison features. Compare content & text style between similar document formats."
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 
 ############################# APIs ###############################
 apis:

@@ -11,8 +11,6 @@ head_description: "Get all-in-one document viewer solution for .NET, Java and cl
 ############################# Header ############################
 title: "Document Rendering and Viewing Solution"
 description: "‎Flexible document viewing solution for programmers and professionals to render and display widely used file formats anywhere.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 
 ############################# APIs ###############################
 apis:

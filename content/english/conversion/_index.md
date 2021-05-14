@@ -11,8 +11,6 @@ head_description: "Get all-in-one document conversion solution for .NET, Java an
 ############################# Header ############################
 title: "Document and Image Conversion Solution"
 description: "‎Convert popular document and image file formats on any platform with app and api-based solutions.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 
 ############################# APIs ###############################
 apis:

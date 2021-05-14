@@ -11,8 +11,6 @@ head_description: "Document manipulation APIs to view annotate convert compare s
 ############################# Header ############################
 title: ".NET & Java Document Automation APIs"
 description: "‎Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 
 ############################# APIs ###############################
 apis:

@@ -11,8 +11,6 @@ head_description: "Get all-in-one document annotation solution for .NET, Java an
 ############################# Header ############################
 title: "Document and Image Annotation Solution"
 description: "Annotate documents with our apps or build your own custom annotation applications across popular platforms using on premise or cloud APIs.‎"
-bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
-bg_overlay: false
 
 ############################# APIs ###############################
 apis:

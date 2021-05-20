@@ -17,7 +17,6 @@ install:
 
 script:
 - hugo --minify
-- rm $SRC_DIR/sitemap.xml
 
 after_success:
 - scp -i ./deploy_key -r $SRC_DIR/* $USER@$HOST:$DEST_DIR

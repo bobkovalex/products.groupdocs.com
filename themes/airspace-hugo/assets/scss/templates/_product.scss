@@ -24,15 +24,16 @@
 
 // SubMenu
 .submenu { 
-    img {
-        width: 42px;
-        height: 42px;
-        float: left;
-        margin-right: 8px;
-    }
 
     h4 {
         margin: 0;
+
+        img {
+            width: 42px;
+            height: 42px;
+            float: left;
+            margin-right: 8px;
+        }
     }
 
     .nav {
@@ -469,10 +470,17 @@
 
 // Products
 .products {
-    img {
-        float: left;
-        margin-right: 10px;
-        padding-bottom: 140px;
+    .product-item {
+        min-height: 210px;
+
+        .col-md-2 {
+            padding: 0;
+            text-align: center;
+        }
+
+        h4 {
+            margin-top: 0;
+        }
     }
 }
 

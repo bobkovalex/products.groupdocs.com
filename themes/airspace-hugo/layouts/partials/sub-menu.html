@@ -3,7 +3,7 @@
     <div class="container section-default-padding">
         <div class="row">
             {{ with .left }}
-            <div class="col-sm-3 col-md-3">
+            <div class="col-xs-12 col-sm-3 col-md-3">
                 <h4>
                     <img alt="{{ .img_alt | markdownify }}" data-src="{{ .image | relURL }}" src="{{ .image | relURL }}">
                     {{ .product | markdownify }}
@@ -21,7 +21,7 @@
             </div>
             {{ end }}
             {{ with .right }}
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-4 col-md-4 text-center">
                 <a href="{{ .link_download | relLangURL }}" class="btn btn-small btn-download animated fadeInUp"><i class="fas fa-arrow-down"></i> Download</a>
                 <a href="{{ .link_learn | relLangURL }}" class="btn btn-small btn-learn animated fadeInUp"><i class="fas fa-file-alt"></i> Learn</a>
                 <a href="{{ .link_buy | relLangURL }}" class="btn btn-small btn-buy animated fadeInUp"><i class="fas fa-shopping-cart"></i> Buy</a>

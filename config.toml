@@ -9,18 +9,12 @@ paginate = "4"
 summaryLength = "30"
 # Disabled languages
 disableLanguages = []
-# Short name to enable Disqus comments
-disqusShortname = "" # Get your shortname from here: https://disqus.com/profile/signup/
-# Measurement ID (G-XXXXXXX) to enable Google Analytics
-googleAnalytics = ""
-
 
 ################################# Output formats ##############################
 # Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
 
 [outputs]
 home = [ "HTML" ]
-
 
 ################################# Markup ######################################
 # Documentation: https://gohugo.io/getting-started/configuration-markup
@@ -34,7 +28,6 @@ startLevel = 2
 endLevel = 6
 ordered = false
 
-
 ################################# Default parameters ##########################
 [params]
 logo = "https://cms.admin.containerize.com/templates/groupdocs/img/svg/groupdocs-logo.svg"
@@ -42,47 +35,13 @@ logo_width = "270px"
 # OpenGraph / Twitter Card metadata
 description = "Document automation APIs for .NET & Java developers to view annotate merge/diff convert e-sign or assemble documents"
 author = "GroupDocs"
-image = "https://cms.admin.containerize.com/templates/groupdocs/img/svg/groupdocs-logo.svg" # this image will be used as fallback if a page has no image of its own
-
-
-
-
-
-################################# Preloader ###################################
-[params.preloader]
-enable = true
-preloader = "" # use .png , .svg or .gif image
-
+# this image will be used as fallback if a page has no image of its own
+image = "https://cms.admin.containerize.com/templates/groupdocs/img/svg/groupdocs-logo.svg"
 
 ################################# Cookies #####################################
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
-
-
-################################# Plugins #####################################
-# CSS Plugins
-[[params.plugins.css]]
-link = "plugins/bootstrap/css/bootstrap.min.css"
-attributes = "media='screen'"
-
-[[params.plugins.css]]
-link = "plugins/slick/slick.css"
-attributes = ""
-
-# JS Plugins
-[[params.plugins.js]]
-link = "plugins/jquery/jquery.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/bootstrap/js/bootstrap.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-attributes = ""
-
 
 ################################# English translation #########################
 [languages.en]

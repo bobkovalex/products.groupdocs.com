@@ -5,6 +5,12 @@
   .product-item {
     padding-bottom: 80px;
 
+    a:hover {
+      .product-btn-label {
+        color: $white;
+      }
+    }
+
     i {
       font-size: 60px;
       color: $primary-color;

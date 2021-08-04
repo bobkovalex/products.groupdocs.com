@@ -647,3 +647,117 @@
         }
     }
 }
+
+@media (max-width: 668px) {
+  body {
+    overflow-x: hidden;
+  }
+  .overview-tabs ul.nav {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  .overview-tabs ul.nav li {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .overview-tabs ul.nav .active {
+    margin-top: 0 !important;
+    min-height: auto !important;
+  }
+  .overview-tabs .diagram1 .d1-logo {
+    top: -250px;
+    display: none !important;
+  }
+  .overview-tabs .diagram1 {
+    margin: 10px !important;
+  }
+  .diagram1 header {
+    padding: 0 !important;
+    color: #333 !important;
+    background: 0 0 !important;
+  }
+  .diagram1 header i {
+    display: none !important;
+  }
+  .support .btn-support {
+    display: block;
+    white-space: break-spaces;
+    margin-bottom: 15px;
+  }
+  .footer2anchor,
+  .footer2col p {
+    line-height: 50px;
+  }
+}
+.our-products .product-item p {
+  min-height: 90px !important;
+  height: inherit !important;
+}
+
+.submenu h4 {
+	font-size: 17px!important
+}
+
+.solutions.bg-primary .container.section-default-padding .row+.row {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-flow: wrap;
+}
+
+.more-feature-item h3 {
+	font-weight: 600
+}
+
+.solutions .solution-container a {
+	color: #fff;
+	font-size: 17px;
+	line-height: 24px;
+}
+
+@media (max-width:768px) {
+	.submenu li a {
+		padding: 15px 6px
+	}
+	.overview-tabs .diagram1.d2 .d1-left header,
+	.overview-tabs .diagram1.d2 .d1-right header {
+		color: #ffffff!important;
+		line-height: 40px;
+		padding: 0 10px!important;
+		background: #20bae6!important
+	}
+	.row {
+		margin-left: 0!important;
+		margin-right: 0!important
+	}
+	.section-default-padding {
+		padding: 20px 10px!important;
+	}
+	.section-title h2 {
+		line-height: 30px!important;
+	}
+	.features i {
+		padding-bottom: 35px!important;
+		min-width: 40px!important;
+	}
+	.overview-tabs ul.nav {
+		margin-top: 20px!important
+	}
+	.products .product-item {
+		padding: 25px 0;
+		border-bottom: 1px solid #eee;
+	}
+	.products .product-item .col-md-2 {
+		padding: 0 0 25px;
+	}
+	.submenu .btn-small {
+		padding: 10px 14px;
+	}
+	.submenu .nav.nav-pills {
+		display: table;
+		margin: 0 auto;
+	}
+}

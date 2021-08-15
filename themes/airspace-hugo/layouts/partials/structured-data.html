@@ -40,7 +40,7 @@
   "image": [
     "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-{{ $family }}{{ if $platform  }}-for-{{ $platform}}{{ end }}.png"
   ],
-  "description": "{{ .Page.Params.description | markdownify }}",
+  "description": {{ .Page.Params.description }},
   "downloadUrl": "https://downloads.groupdocs.com/{{ $family }}/{{ $platform }}",
   "releaseNotes": "https://docs.groupdocs.com/{{ $family }}/{{ if $platform  }}{{ $platform}}{{ else }}net{{ end }}/release-notes/",
   "applicationSubCategory": "Application Programming Interface",

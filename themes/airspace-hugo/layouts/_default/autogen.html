@@ -1,0 +1,255 @@
+{{ define "main" }}
+
+<!-- ############ Calculations ############ -->
+
+{{ $path := .Page.Params.path }}
+{{ $segments := split $path "/" }}
+{{ $depth := len $segments }}
+{{ $family := index ($segments) 0 }}
+{{ $platform := index ($segments) 1 }}
+{{ $informat := "" }}
+{{ $outformat := "" }}
+{{ $slug := "" }}
+{{ $platformname := "" }}
+{{ if eq $platform "net"}}
+    {{ $platformname = ".NET" }}
+{{ else if eq $platform "java"}}
+    {{ $platformname = "Java" }}
+{{ end }}
+
+{{ if eq $family "conversion" }}
+    {{ $slug = index ($segments) 2 }}
+    {{ $informat = index (split $slug "-to-") 0 }}
+    {{ $outformat = index (split $slug "-to-") 1 }} 
+{{ else }}
+    {{ $informat = index ($segments) (sub $depth 1) }}
+    {{ $slug = $informat }}
+{{ end }}
+
+{{ $informatdesc := "" }}
+{{ $informatlink := "" }}
+{{ $outformatdesc := "" }}
+{{ $outformatlink := "" }}
+{{ $formatname := "" }}
+{{ $colsize := 12 }}
+
+{{ $formats := site.Data.fileformats }}
+{{ range $formats }}
+  {{ if eq .format ( upper $informat)  }}
+    {{ $informatdesc = .description }}
+	{{ $informatlink = .link }}
+  {{ end }}
+  {{ if $outformat }}
+    {{ if eq .format ( upper $outformat)  }}
+        {{ $outformatdesc = .description }}
+        {{ $outformatlink = .link }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if and ($informat) ($outformat) }}
+    {{ $colsize = 6 }}
+{{ end }}
+
+{{ $outformats := split $.Page.Params.otherformats " " }}
+{{ $formatname := "" }}
+
+<!-- ############ HEADER ############ -->
+<a id="top" class="anchor" name="top"></a>
+<section class="page-title bg-2" style="background-image: url('https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png'); background-position: center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .Title | markdownify }}</h1>
+          <p>{{ .Params.description | markdownify }}</p>
+              <a href="https://downloads.groupdocs.com/{{ $family }}/{{ $platform }}" class="btn btn-main btn-icon animated fadeInUp"><i class="fas fa-arrow-down"></i> Download Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ############ SUB MENU ############ -->
+{{ with .Params.submenu }}
+{{ if .enable }}
+
+<a id="submenu" class="anchor" name="submenu"></a>
+<section class="submenu">
+    <div class="container section-default-padding">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <h4>
+                    <img alt="GroupDocs.{{ $family | humanize }} for {{ $platformname }}" src="https://cms.admin.containerize.com/templates/groupdocs/images/product-logos/90x90-noborder/groupdocs-{{ $family }}-{{ $platform }}.png">
+                    GroupDocs.{{ $family | humanize }}
+                    <div><small>for {{ $platformname }}</small></div>
+                </h4>
+            </div>
+
+            <div class="col-sm-5 col-md-5">
+                <ul class="nav nav-pills mb-hide">
+                    <li><a href="https://apireference.groupdocs.com/{{ $family }}/{{ $platform }}">API Reference</a></li>
+                    <li><a href="https://github.com/groupdocs-{{ $family }}">Code Examples</a></li>
+                    <li><a href="https://products.groupdocs.app/{{ $family }}/family">Live Demos</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-4 text-center">
+                <a href="https://downloads.groupdocs.com/{{ $family }}/{{ $platform }}" class="btn btn-small btn-download animated fadeInUp"><i class="fas fa-arrow-down"></i> Download</a>
+                <a href="https://docs.groupdocs.com/{{ $family }}/{{ $platform }}/" class="btn btn-small btn-learn animated fadeInUp"><i class="fas fa-file-alt"></i> Learn</a>
+                <a href="https://purchase.groupdocs.com/" class="btn btn-small btn-buy animated fadeInUp"><i class="fas fa-shopping-cart"></i> Buy</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}
+
+<!-- ############ ABOUT ############ -->
+{{ with .Params.about }}
+{{ if .enable }}
+<a id="about" class="anchor" name="about"></a>
+<section class="about bg-gray">
+    <div class="container section-default-padding">
+        <h2>{{ .title }}</h2>
+        <p class="mt-20">{{ .content | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- ############ STEPS ############ -->
+{{ with .Params.steps }}
+{{ if .enable }}
+<section class="steps">
+    <div class="container section-default-padding">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <h2>{{ .title_left }}</h2>
+                <p class="mt-20">{{ .content_left | markdownify }}</p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <h2>{{ .title_right }}</h2>
+                <p class="mt-20">{{ .content_right | markdownify }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="mt-40">{{ .code | markdownify }}</p>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- ############ DEMOS ############ -->
+{{ with .Params.demos }}
+{{ if .enable }}
+<section class="demos bg-gray">
+    <div class="container section-default-padding">
+        <div class="row">
+            <h2>{{ upper $informat }} {{ $family | humanize }} Live Demo</h2>
+            <p class="mt-20">Checkout the <a href="https://products.groupdocs.app/{{ $family }}/{{ $slug }}">free online demo</a> for {{ upper $informat }} {{ $family | humanize }}.</p>
+        </div>
+        <div class="row democard-container mt-30">
+            <div class="col-sm-3 col-md-3">
+                <div class="democard">
+                    <i class="fas fa-cogs"></i>
+                    <p class="mt-10">No need to set up</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="democard">
+                    <i class="fas fa-laptop-code"></i>
+                    <p class="mt-10">No need to write any code</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="democard">
+                    <i class="fas fa-bolt"></i>
+                    <p class="mt-10">Just upload the source file</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="democard">
+                    <i class="fas fa-download"></i>
+                    <p class="mt-10">Get the download link</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+<!-- ############ ABOUT FORMAT ############ -->
+{{ with .Params.about_formats }}
+{{ if .enable }}
+
+<section class="about-format bg-gray">
+    <div class="container section-default-padding bg-white">
+        {{ if $informat }}
+        <div class="col-sm-{ $colsize }} col-md-{{ $colsize }}">
+            <h2>What is {{ upper $informat }} File Format?</h2>
+            <p>{{ $informatdesc | markdownify }}</p>
+            <a class="btn-small" href="{{ $informatlink | relURL }}">Read More</a>
+        </div>
+        {{ end }}
+        {{ if $outformat }}
+        <div class="col-sm-{ $colsize }} col-md-{{ $colsize }}">
+            <h2>What is {{ upper $outformat }} File Format?</h2>
+            <p>{{ $outformatdesc | markdownify }}</p>
+            <a class="btn-small" href="{{ $outformatlink | relURL }}">Read More</a>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- ############ MORE FORMATS ############ -->
+{{ with .Params.more_formats }}
+{{ if .enable }}
+
+<section class="more-formats">
+    <div class="container section-default-padding">
+        <div class="row">
+            <h2>Other {{ $family | humanize }} Options</h2>
+            <p>{{ .content | markdownify }}</p>
+        </div>
+        <div class="row formats mt-20">
+            {{ range $outformats}}
+                {{ $format := . }}
+                {{ range $formats }}
+                    {{ if eq .format $format }}
+                        {{ $formatname = .name }}
+                    {{ end }}
+                {{ end }}
+            <div class="col-sm-3 col-md-3">
+                <h4>
+                {{ if eq $family "conversion"}}
+                <a href="/{{ strings.TrimRight $slug $path }}{{ lower $informat }}-to-{{ lower . }}">Convert {{ upper $informat }} TO {{ upper . }}</a>
+                {{ else }}
+                <a href="/{{ strings.TrimRight $slug $path }}{{ lower . }}">{{ upper . }} {{ humanize $family }}</a>
+                {{ end }}
+                </h4>
+                {{ if $formatname }}<p>({{ $formatname }})</p>{{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- ############ BACK 2 TOP ############ -->
+{{ with .Params.back_to_top }}
+{{ if .enable }}
+
+{{- partial "back2top.html" . -}}
+
+{{ end }}
+{{ end }}
+
+{{ end }}

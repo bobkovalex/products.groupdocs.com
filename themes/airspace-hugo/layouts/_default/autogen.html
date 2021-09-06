@@ -2,7 +2,7 @@
 
 <!-- ############ Calculations ############ -->
 
-{{ $path := .Page.Params.path }}
+{{ $path := strings.TrimRight "/" .Page.Params.path }}
 {{ $segments := split $path "/" }}
 {{ $depth := len $segments }}
 {{ $family := index ($segments) 0 }}
@@ -25,7 +25,6 @@
     {{ $informat = index ($segments) (sub $depth 1) }}
     {{ $slug = $informat }}
 {{ end }}
-
 {{ $informatdesc := "" }}
 {{ $informatlink := "" }}
 {{ $outformatdesc := "" }}
@@ -63,7 +62,7 @@
         <div class="block">
           <h1>{{ .Title | markdownify }}</h1>
           <p>{{ .Params.description | markdownify }}</p>
-              <a href="https://downloads.groupdocs.com/{{ $family }}/{{ $platform }}" class="btn btn-main btn-icon animated fadeInUp"><i class="fas fa-arrow-down"></i> Download Free Trial</a>
+             <!-- <a href="https://downloads.groupdocs.com/{{ $family }}/{{ $platform }}" class="btn btn-main btn-icon animated fadeInUp"><i class="fas fa-arrow-down"></i> Download Free Trial</a> -->
         </div>
       </div>
     </div>
@@ -186,7 +185,6 @@
 <!-- ############ ABOUT FORMAT ############ -->
 {{ with .Params.about_formats }}
 {{ if .enable }}
-
 <section class="about-format bg-gray">
     <div class="container section-default-padding bg-white">
         {{ if $informat }}

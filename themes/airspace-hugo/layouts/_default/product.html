@@ -336,9 +336,11 @@
                             <li>
                                 <a href="https://github.com/groupdocs-{{ $.Params.product_tag }}">Source Code</a>
                             </li>
+                            {{ if ne $.Params.product_tag "total"}}
                             <li>
                                 <a href="https://apireference.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}">API References</a>
                             </li>
+                            {{ end }}
                             <li>
                                 <a href="https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g">Video Tutorials</a>
                             </li>
@@ -360,9 +362,11 @@
                             <li>
                                 <a href="https://blog.groupdocs.com/category/{{ $.Params.product_tag }}">Blog</a>
                             </li>
+                            {{ if ne $.Params.product_tag "total"}}
                             <li>
                                 <a href="https://docs.groupdocs.com/{{ $.Params.product_tag }}/{{ $.Params.platform_tag }}/release-notes">Release Notes</a>
                             </li>
+                            {{ end }}
                         </ul>
                     </p>
                 </div>
